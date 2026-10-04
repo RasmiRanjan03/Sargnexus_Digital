@@ -978,3 +978,151 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/* ============================================================
+   AESTHETIC ANIMATIONS & MICRO-INTERACTIONS
+   ============================================================ */
+
+/* Floating animation for cards & badges */
+@keyframes floatSlow {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes floatReverse {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(108, 92, 231, 0.35);
+    }
+    50% {
+        box-shadow: 0 0 35px rgba(129, 140, 248, 0.65);
+    }
+}
+
+@keyframes pulseWhatsApp {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* WhatsApp Pulse */
+.whatsapp-float-btn {
+    animation: pulseWhatsApp 2.2s infinite;
+}
+
+/* Subtle float on hero badge */
+.hero-badge-corner {
+    animation: floatSlow 4s ease-in-out infinite;
+}
+
+/* Micro-animations on floating info cards in About */
+.card-top-left {
+    animation: floatSlow 5s ease-in-out infinite;
+}
+
+.card-bottom-left {
+    animation: floatReverse 4.5s ease-in-out infinite 0.5s;
+}
+
+.card-bottom-right {
+    animation: floatSlow 5.5s ease-in-out infinite 1s;
+}
+
+/* Hero image glowing frame */
+.hero-image-wrapper {
+    animation: pulseGlow 5s ease-in-out infinite;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+}
+
+.hero-image-wrapper:hover {
+    transform: translateY(-5px) scale(1.01);
+}
+
+/* Button hover shine & bounce */
+.btn-purple-gradient {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-purple-gradient::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 40%;
+    height: 200%;
+    background: linear-gradient(
+        60deg,
+        rgba(255, 255, 255, 0) 20%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0) 80%
+    );
+    transform: rotate(25deg);
+    transition: all 0.75s ease;
+}
+
+.btn-purple-gradient:hover::after {
+    left: 140%;
+}
+
+/* Interactive Card Enhancements */
+.service-card, .service-overlay-card, .pricing-card, .testimonial-card, .why-feature-card {
+    will-change: transform, box-shadow;
+}
+
+.service-overlay-card {
+    transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s ease;
+}
+
+.service-overlay-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(11, 15, 25, 0.25);
+}
+
+.service-overlay-card img {
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.service-overlay-card:hover img {
+    transform: scale(1.08);
+}
+
+/* Process node pulsing */
+.process-icon-circle {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.process-node:hover .process-icon-circle {
+    transform: scale(1.15) rotate(6deg);
+    background: #6366f1;
+    color: #ffffff;
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.35);
+}
+
+/* Paper plane hover glide */
+.paper-plane-decoration svg {
+    transition: transform 0.5s ease;
+}
+
+.paper-plane-decoration:hover svg {
+    transform: translate(6px, -6px);
+}
+
+

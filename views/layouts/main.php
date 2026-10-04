@@ -45,6 +45,19 @@ $this->render('_head');
     <i class="bi bi-whatsapp"></i>
 </a>
 
+<!-- AOS Animation Script -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 60
+        });
+    });
+</script>
+
 <?php $this->endBody() ?>
 </body>
 </html>

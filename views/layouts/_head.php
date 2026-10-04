@@ -62,6 +62,12 @@ $this->registerLinkTag(
 );
 $this->registerLinkTag(
     [
+        'rel' => 'stylesheet',
+        'href' => 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css',
+    ],
+);
+$this->registerLinkTag(
+    [
         'rel' => 'icon',
         'type' => 'image/x-icon',
         'href' => Yii::getAlias('@web/favicon.ico'),

@@ -20,7 +20,7 @@ $this->params['fluid'] = true;
     <div class="container custom-nav-container py-lg-4 position-relative z-2">
         <div class="row align-items-center g-5 justify-content-between">
             <!-- Left Info Column -->
-            <div class="col-lg-5">
+            <div class="col-lg-5" data-aos="fade-right" data-aos-duration="850">
                 <span class="agency-tag text-primary text-uppercase fw-bold mb-2 d-inline-block tracking-wider">
                     HAVE A PROJECT IN MIND?
                 </span>
@@ -35,7 +35,7 @@ $this->params['fluid'] = true;
                 <!-- Value Proposition Points -->
                 <div class="d-flex flex-column gap-4">
                     <!-- Point 1 -->
-                    <div class="d-flex align-items-start gap-3">
+                    <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="100">
                         <div class="quote-feature-icon flex-shrink-0">
                             <i class="bi bi-lightning-charge-fill text-primary"></i>
                         </div>
@@ -46,7 +46,7 @@ $this->params['fluid'] = true;
                     </div>
 
                     <!-- Point 2 -->
-                    <div class="d-flex align-items-start gap-3">
+                    <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="200">
                         <div class="quote-feature-icon flex-shrink-0">
                             <i class="bi bi-file-earmark-text-fill text-primary"></i>
                         </div>
@@ -57,7 +57,7 @@ $this->params['fluid'] = true;
                     </div>
 
                     <!-- Point 3 -->
-                    <div class="d-flex align-items-start gap-3">
+                    <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="300">
                         <div class="quote-feature-icon flex-shrink-0">
                             <i class="bi bi-person-check-fill text-primary"></i>
                         </div>
@@ -69,7 +69,7 @@ $this->params['fluid'] = true;
                 </div>
 
                 <!-- Paper Plane Decorative Trail -->
-                <div class="paper-plane-decoration d-none d-lg-block mt-4 position-relative">
+                <div class="paper-plane-decoration d-none d-lg-block mt-4 position-relative" data-aos="zoom-in" data-aos-delay="400">
                     <svg width="220" height="90" viewBox="0 0 220 90" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10 80C60 85 90 40 140 45C170 48 190 20 205 12" stroke="#818cf8" stroke-width="2" stroke-dasharray="4 4"/>
                         <path d="M210 5L195 18L205 12L215 15L210 5Z" fill="#6366f1"/>
@@ -78,7 +78,7 @@ $this->params['fluid'] = true;
             </div>
 
             <!-- Right Form Card -->
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="850" data-aos-delay="150">
                 <div class="quote-form-card shadow-lg p-4 p-md-5 bg-white">
                     <div class="quote-form-header mb-4">
                         <div class="quote-accent-bar mb-3"></div>

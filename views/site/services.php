@@ -24,7 +24,7 @@ $this->params['fluid'] = true;
 
         <div class="row align-items-center g-5">
             <!-- Left Hero Text -->
-            <div class="col-lg-6 z-2">
+            <div class="col-lg-6 z-2" data-aos="fade-right" data-aos-duration="850">
                 <h1 class="hero-title mb-3">
                     Our <span class="text-gradient-purple">Services</span>
                 </h1>
@@ -39,7 +39,7 @@ $this->params['fluid'] = true;
             </div>
 
             <!-- Right Hero Image: Laptop with IDEAS STRATEGY DESIGN GROWTH -->
-            <div class="col-lg-6 position-relative">
+            <div class="col-lg-6 position-relative" data-aos="fade-left" data-aos-duration="850" data-aos-delay="150">
                 <div class="hero-image-wrapper">
                     <img src="<?= Yii::getAlias('@web/images/services-hero-laptop.jpg') ?>" alt="Ideas Strategy Design Growth" class="hero-image img-fluid">
                 </div>
@@ -51,7 +51,7 @@ $this->params['fluid'] = true;
 <!-- 2. EVERYTHING YOU NEED TO GROW ONLINE (6 SERVICE CARDS WITH DARK BOTTOM OVERLAYS) -->
 <section class="services-list-section py-5 my-lg-3">
     <div class="container custom-nav-container">
-        <div class="text-center mb-5">
+        <div class="text-center mb-5" data-aos="fade-up">
             <span class="section-tag text-uppercase mb-2 d-inline-block">OUR SERVICES</span>
             <h2 class="section-title">
                 Everything You Need to <span class="text-purple">Grow Online</span>
@@ -61,7 +61,7 @@ $this->params['fluid'] = true;
         <!-- 6 Distinct Service Cards (3 columns x 2 rows) -->
         <div class="row g-4">
             <!-- 1. SEO -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-overlay-card">
                     <img src="<?= Yii::getAlias('@web/images/service-seo.jpg') ?>" alt="SEO">
                     <div class="service-overlay-content">
@@ -72,7 +72,7 @@ $this->params['fluid'] = true;
             </div>
 
             <!-- 2. Online Advertising -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="service-overlay-card">
                     <img src="<?= Yii::getAlias('@web/images/service-advertising.jpg') ?>" alt="Online Advertising">
                     <div class="service-overlay-content">
@@ -83,7 +83,7 @@ $this->params['fluid'] = true;
             </div>
 
             <!-- 3. Lead Generation -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="service-overlay-card">
                     <img src="<?= Yii::getAlias('@web/images/service-leads.jpg') ?>" alt="Lead Generation">
                     <div class="service-overlay-content">
@@ -94,7 +94,7 @@ $this->params['fluid'] = true;
             </div>
 
             <!-- 4. Branding & Design -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
                 <div class="service-overlay-card">
                     <img src="<?= Yii::getAlias('@web/images/service-branding.jpg') ?>" alt="Branding & Design">
                     <div class="service-overlay-content">
@@ -105,7 +105,7 @@ $this->params['fluid'] = true;
             </div>
 
             <!-- 5. Reels & Social Media Content -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
                 <div class="service-overlay-card">
                     <img src="<?= Yii::getAlias('@web/images/service-reels.jpg') ?>" alt="Reels & Social Media Content">
                     <div class="service-overlay-content">
@@ -116,7 +116,7 @@ $this->params['fluid'] = true;
             </div>
 
             <!-- 6. Logo Design -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
                 <div class="service-overlay-card">
                     <img src="<?= Yii::getAlias('@web/images/service-logo.jpg') ?>" alt="Logo Design">
                     <div class="service-overlay-content">
@@ -132,7 +132,7 @@ $this->params['fluid'] = true;
 <!-- 3. OUR IMPACT STATS BANNER -->
 <section class="impact-banner-section py-4 my-4">
     <div class="container custom-nav-container">
-        <div class="impact-banner-card px-4 py-4 px-lg-5">
+        <div class="impact-banner-card px-4 py-4 px-lg-5" data-aos="zoom-in" data-aos-duration="750">
             <div class="row align-items-center g-4">
                 <div class="col-lg-4 text-center text-lg-start">
                     <span class="impact-tag text-uppercase fw-bold d-block mb-1">OUR IMPACT</span>
@@ -169,7 +169,7 @@ $this->params['fluid'] = true;
 <!-- 4. OUR PROCESS: 4-STEP TIMELINE -->
 <section class="process-section py-5">
     <div class="container custom-nav-container">
-        <div class="text-center mb-5">
+        <div class="text-center mb-5" data-aos="fade-up">
             <span class="section-tag text-uppercase mb-2 d-inline-block">OUR PROCESS</span>
             <h2 class="section-title">
                 A Simple <span class="text-purple">Process</span>
@@ -181,7 +181,7 @@ $this->params['fluid'] = true;
             <div class="process-line-connector d-none d-lg-block"></div>
 
             <!-- Step 1 -->
-            <div class="col-lg-3 col-6 text-center">
+            <div class="col-lg-3 col-6 text-center" data-aos="fade-up" data-aos-delay="100">
                 <div class="process-node mb-3">
                     <span class="process-number">01</span>
                     <div class="process-icon-circle">
@@ -193,7 +193,7 @@ $this->params['fluid'] = true;
             </div>
 
             <!-- Step 2 -->
-            <div class="col-lg-3 col-6 text-center">
+            <div class="col-lg-3 col-6 text-center" data-aos="fade-up" data-aos-delay="200">
                 <div class="process-node mb-3">
                     <span class="process-number">02</span>
                     <div class="process-icon-circle">
@@ -205,7 +205,7 @@ $this->params['fluid'] = true;
             </div>
 
             <!-- Step 3 -->
-            <div class="col-lg-3 col-6 text-center">
+            <div class="col-lg-3 col-6 text-center" data-aos="fade-up" data-aos-delay="300">
                 <div class="process-node mb-3">
                     <span class="process-number">03</span>
                     <div class="process-icon-circle">
@@ -217,7 +217,7 @@ $this->params['fluid'] = true;
             </div>
 
             <!-- Step 4 -->
-            <div class="col-lg-3 col-6 text-center">
+            <div class="col-lg-3 col-6 text-center" data-aos="fade-up" data-aos-delay="400">
                 <div class="process-node mb-3">
                     <span class="process-number">04</span>
                     <div class="process-icon-circle">
@@ -236,14 +236,14 @@ $this->params['fluid'] = true;
     <div class="container custom-nav-container">
         <div class="row align-items-center g-5">
             <!-- Left Side Image -->
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-duration="850">
                 <div class="hero-image-wrapper">
                     <img src="<?= Yii::getAlias('@web/images/hero-laptop.jpg') ?>" alt="Growth Strategy" class="hero-image img-fluid">
                 </div>
             </div>
 
             <!-- Right Side Features -->
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="850">
                 <span class="section-tag text-uppercase mb-2 d-inline-block">WHY CHOOSE SARGNEXUS</span>
                 <h2 class="section-title mb-4">
                     More Than Just Services.<br>
@@ -251,25 +251,25 @@ $this->params['fluid'] = true;
                 </h2>
 
                 <div class="row g-4">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="pillar-box">
                             <h5 class="fw-bold mb-1 fs-6">Focused Strategy</h5>
                             <p class="text-secondary small mb-0">Every plan is tailored to your business.</p>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="pillar-box">
                             <h5 class="fw-bold mb-1 fs-6">Clear Communication</h5>
                             <p class="text-secondary small mb-0">You always know what's happening.</p>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="pillar-box">
                             <h5 class="fw-bold mb-1 fs-6">Result-Oriented</h5>
                             <p class="text-secondary small mb-0">We focus on real growth, not just likes.</p>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="pillar-box">
                             <h5 class="fw-bold mb-1 fs-6">On-Time Delivery</h5>
                             <p class="text-secondary small mb-0">We respect your time and deadlines.</p>
@@ -284,7 +284,7 @@ $this->params['fluid'] = true;
 <!-- 6. PREFER TO CONTACT US VIA EMAIL? STRIP -->
 <section class="email-contact-strip py-4 my-4">
     <div class="container custom-nav-container">
-        <div class="email-strip-card p-4 px-lg-5">
+        <div class="email-strip-card p-4 px-lg-5" data-aos="zoom-in" data-aos-duration="700">
             <div class="row align-items-center justify-content-between g-3">
                 <div class="col-md-8 d-flex align-items-center gap-3">
                     <div class="email-strip-icon flex-shrink-0">

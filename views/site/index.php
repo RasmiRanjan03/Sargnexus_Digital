@@ -16,7 +16,7 @@ $this->params['fluid'] = true; // Full-width section styling
     <div class="container custom-nav-container">
         <div class="row align-items-center g-5">
             <!-- Left Hero Content -->
-            <div class="col-lg-6 z-2">
+            <div class="col-lg-6 z-2" data-aos="fade-right" data-aos-duration="900">
                 <span class="agency-tag text-uppercase fw-bold mb-3 d-inline-block tracking-wider">
                     DIGITAL MARKETING AGENCY
                 </span>
@@ -28,17 +28,17 @@ $this->params['fluid'] = true; // Full-width section styling
                     We help businesses get noticed, reach the right people, and turn online attention into real customers.
                 </p>
                 <div class="d-flex flex-wrap gap-3 align-items-center">
-                    <a href="#pricing" class="btn btn-purple-gradient text-white fw-semibold px-4 py-3 rounded-pill">
+                    <a href="<?= Url::to(['/site/quote']) ?>" class="btn btn-purple-gradient text-white fw-semibold px-4 py-3 rounded-pill">
                         Get a Free Quote <i class="bi bi-arrow-right ms-1"></i>
                     </a>
-                    <a href="#services" class="btn btn-outline-purple fw-semibold px-4 py-3 rounded-pill">
+                    <a href="<?= Url::to(['/site/services']) ?>" class="btn btn-outline-purple fw-semibold px-4 py-3 rounded-pill">
                         Explore Services
                     </a>
                 </div>
             </div>
 
             <!-- Right Hero Image with Laptop Analytics -->
-            <div class="col-lg-6 position-relative">
+            <div class="col-lg-6 position-relative" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
                 <div class="hero-badge-corner d-none d-md-block">
                     <span class="handwritten-badge">
                         Your<br>Growth<br>Partner
@@ -58,7 +58,7 @@ $this->params['fluid'] = true; // Full-width section styling
     <div class="container custom-nav-container">
         <div class="row align-items-center g-5">
             <!-- Left About Text & Stats -->
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
                 <span class="section-tag text-uppercase mb-2 d-inline-block">
                     ABOUT SARGNEXUS DIGITAL
                 </span>
@@ -70,7 +70,7 @@ $this->params['fluid'] = true; // Full-width section styling
                     We help businesses build a stronger online presence, reach the right customers, and grow with the right digital marketing strategy.
                 </p>
                 <div class="mb-5">
-                    <a href="#services" class="btn btn-dark-navy px-4 py-2 rounded-pill fw-semibold">
+                    <a href="<?= Url::to(['/site/services']) ?>" class="btn btn-dark-navy px-4 py-2 rounded-pill fw-semibold">
                         Our Approach <i class="bi bi-arrow-right ms-1"></i>
                     </a>
                 </div>
@@ -97,7 +97,7 @@ $this->params['fluid'] = true; // Full-width section styling
             </div>
 
             <!-- Right Composite Image with Badges -->
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="850">
                 <div class="about-composite-wrapper position-relative px-lg-3">
                     <!-- Top floating badge -->
                     <div class="floating-info-card card-top-left d-none d-sm-block">
@@ -128,14 +128,14 @@ $this->params['fluid'] = true; // Full-width section styling
 <section id="services" class="services-section py-5">
     <div class="container custom-nav-container">
         <!-- Section Header -->
-        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5" data-aos="fade-up">
             <div>
                 <span class="section-tag text-uppercase mb-2 d-inline-block">OUR SERVICES</span>
                 <h2 class="section-title mb-0">
                     Everything You Need to <span class="text-purple">Grow Online.</span>
                 </h2>
             </div>
-            <a href="#pricing" class="btn btn-outline-secondary rounded-pill px-4 py-2 mt-3 mt-md-0 fw-semibold text-nowrap">
+            <a href="<?= Url::to(['/site/services']) ?>" class="btn btn-outline-secondary rounded-pill px-4 py-2 mt-3 mt-md-0 fw-semibold text-nowrap">
                 View All Services <i class="bi bi-arrow-right ms-1"></i>
             </a>
         </div>
@@ -143,7 +143,7 @@ $this->params['fluid'] = true; // Full-width section styling
         <!-- 8 Services 4-Column Grid -->
         <div class="row g-4">
             <!-- 1. Digital Marketing -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-card h-100">
                     <div class="service-card-img-wrapper">
                         <img src="<?= Yii::getAlias('@web/images/service-marketing.jpg') ?>" alt="Digital Marketing">
@@ -159,7 +159,7 @@ $this->params['fluid'] = true; // Full-width section styling
             </div>
 
             <!-- 2. Online Advertising -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="150">
                 <div class="service-card h-100">
                     <div class="service-card-img-wrapper">
                         <img src="<?= Yii::getAlias('@web/images/service-advertising.jpg') ?>" alt="Online Advertising">
@@ -175,7 +175,7 @@ $this->params['fluid'] = true; // Full-width section styling
             </div>
 
             <!-- 3. SEO -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="service-card h-100">
                     <div class="service-card-img-wrapper">
                         <img src="<?= Yii::getAlias('@web/images/service-seo.jpg') ?>" alt="SEO">
@@ -191,7 +191,7 @@ $this->params['fluid'] = true; // Full-width section styling
             </div>
 
             <!-- 4. Lead Generation -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
                 <div class="service-card h-100">
                     <div class="service-card-img-wrapper">
                         <img src="<?= Yii::getAlias('@web/images/service-leads.jpg') ?>" alt="Lead Generation">
@@ -207,7 +207,7 @@ $this->params['fluid'] = true; // Full-width section styling
             </div>
 
             <!-- 5. Branding -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-card h-100">
                     <div class="service-card-img-wrapper">
                         <img src="<?= Yii::getAlias('@web/images/service-branding.jpg') ?>" alt="Branding">
@@ -223,7 +223,7 @@ $this->params['fluid'] = true; // Full-width section styling
             </div>
 
             <!-- 6. Graphics Design -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="150">
                 <div class="service-card h-100">
                     <div class="service-card-img-wrapper">
                         <img src="<?= Yii::getAlias('@web/images/service-graphics.jpg') ?>" alt="Graphics Design">
@@ -239,7 +239,7 @@ $this->params['fluid'] = true; // Full-width section styling
             </div>
 
             <!-- 7. Reels & Social Media Content -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="service-card h-100">
                     <div class="service-card-img-wrapper">
                         <img src="<?= Yii::getAlias('@web/images/service-reels.jpg') ?>" alt="Reels & Social Media Content">
@@ -255,7 +255,7 @@ $this->params['fluid'] = true; // Full-width section styling
             </div>
 
             <!-- 8. Logo Design -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
                 <div class="service-card h-100">
                     <div class="service-card-img-wrapper">
                         <img src="<?= Yii::getAlias('@web/images/service-logo.jpg') ?>" alt="Logo Design">
@@ -287,7 +287,7 @@ $this->params['fluid'] = true; // Full-width section styling
 
         <div class="row g-4">
             <!-- Card 1 -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="why-feature-card">
                     <div class="why-feature-icon mb-3">
                         <i class="bi bi-bullseye"></i>
@@ -298,7 +298,7 @@ $this->params['fluid'] = true; // Full-width section styling
             </div>
 
             <!-- Card 2 -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="why-feature-card">
                     <div class="why-feature-icon mb-3">
                         <i class="bi bi-people"></i>
@@ -309,7 +309,7 @@ $this->params['fluid'] = true; // Full-width section styling
             </div>
 
             <!-- Card 3 -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="why-feature-card">
                     <div class="why-feature-icon mb-3">
                         <i class="bi bi-bar-chart-line"></i>
@@ -320,7 +320,7 @@ $this->params['fluid'] = true; // Full-width section styling
             </div>
 
             <!-- Card 4 -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
                 <div class="why-feature-card">
                     <div class="why-feature-icon mb-3">
                         <i class="bi bi-graph-up-arrow"></i>
@@ -337,7 +337,7 @@ $this->params['fluid'] = true; // Full-width section styling
 <section id="pricing" class="pricing-section py-5">
     <div class="container custom-nav-container">
         <!-- Section Title & Subtitle -->
-        <div class="text-center mb-5 position-relative">
+        <div class="text-center mb-5 position-relative" data-aos="fade-up">
             <span class="section-tag text-uppercase mb-2 d-inline-block">PRICING</span>
             <h2 class="section-title mb-2">
                 Choose Your <span class="text-purple">Growth Plan</span> Wisely.
@@ -353,7 +353,7 @@ $this->params['fluid'] = true; // Full-width section styling
         <!-- 3 Tier Pricing Cards -->
         <div class="row g-4 align-items-stretch">
             <!-- STARTER -->
-            <div class="col-lg-4">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="pricing-card h-100">
                     <div>
                         <div class="pricing-plan-badge text-uppercase mb-2">STARTER</div>
@@ -382,7 +382,7 @@ $this->params['fluid'] = true; // Full-width section styling
                             <i class="bi bi-lock-fill text-secondary"></i>
                             <span><strong>Premium features</strong><br>Unlock more tools and customization with higher plans.</span>
                         </div>
-                        <a href="#contact" class="btn btn-outline-secondary w-100 rounded-pill py-2 fw-semibold">
+                        <a href="<?= Url::to(['/site/quote']) ?>" class="btn btn-outline-secondary w-100 rounded-pill py-2 fw-semibold">
                             Start with Starter &rarr;
                         </a>
                     </div>
@@ -390,7 +390,7 @@ $this->params['fluid'] = true; // Full-width section styling
             </div>
 
             <!-- GROWTH (MOST POPULAR) -->
-            <div class="col-lg-4">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="pricing-card featured-card h-100">
                     <span class="most-popular-pill">Most Popular</span>
                     <div>
@@ -420,7 +420,7 @@ $this->params['fluid'] = true; // Full-width section styling
                             <i class="bi bi-lock-fill text-secondary"></i>
                             <span><strong>Want more control and customization?</strong><br>These features are available in Premium.</span>
                         </div>
-                        <a href="#contact" class="btn btn-purple-gradient text-white w-100 rounded-pill py-2 fw-semibold">
+                        <a href="<?= Url::to(['/site/quote']) ?>" class="btn btn-purple-gradient text-white w-100 rounded-pill py-2 fw-semibold">
                             Choose Growth &rarr;
                         </a>
                     </div>
@@ -428,7 +428,7 @@ $this->params['fluid'] = true; // Full-width section styling
             </div>
 
             <!-- PREMIUM -->
-            <div class="col-lg-4">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="pricing-card h-100">
                     <div>
                         <div class="pricing-plan-badge text-uppercase mb-2">PREMIUM</div>
@@ -539,19 +539,19 @@ $this->params['fluid'] = true; // Full-width section styling
                 </div>
 
                 <!-- Price estimation middle card -->
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 text-center" data-aos="zoom-in" data-aos-delay="150">
                     <div class="custom-quote-card p-4">
                         <span class="text-secondary small text-uppercase fw-semibold d-block mb-1">Your Custom Plan</span>
                         <h4 class="fw-bold mb-2 fs-5">Starting from &#8377;X,XXX</h4>
                         <p class="text-secondary small mb-4">Choose your services. We'll create a plan around your goals.</p>
-                        <a href="#contact" class="btn btn-purple-gradient text-white fw-semibold rounded-pill px-4 py-2">
+                        <a href="<?= Url::to(['/site/quote']) ?>" class="btn btn-purple-gradient text-white fw-semibold rounded-pill px-4 py-2">
                             Get Custom Quote &rarr;
                         </a>
                     </div>
                 </div>
 
                 <!-- Right checklist notebook photo -->
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-left" data-aos-delay="200">
                     <div class="custom-plan-notes-box">
                         <img src="<?= Yii::getAlias('@web/images/custom-plan-notes.jpg') ?>" alt="Marketing plan checklist notepad" class="img-fluid w-100">
                     </div>
@@ -565,7 +565,7 @@ $this->params['fluid'] = true; // Full-width section styling
 <section class="testimonials-section py-5">
     <div class="container custom-nav-container">
         <!-- Section Header with carousel arrows -->
-        <div class="d-flex justify-content-between align-items-end mb-4">
+        <div class="d-flex justify-content-between align-items-end mb-4" data-aos="fade-up">
             <div>
                 <span class="section-tag text-uppercase mb-1 d-inline-block">TESTIMONIALS</span>
                 <h2 class="section-title mb-0">What Our Clients Say</h2>
@@ -579,7 +579,7 @@ $this->params['fluid'] = true; // Full-width section styling
         <!-- 3 Client Feedback Cards -->
         <div class="row g-4">
             <!-- Review 1 -->
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="testimonial-card">
                     <p class="testimonial-quote mb-4">
                         &ldquo;The team understood what our business needed and made digital marketing much easier for us.&rdquo;
@@ -597,7 +597,7 @@ $this->params['fluid'] = true; // Full-width section styling
             </div>
 
             <!-- Review 2 -->
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="testimonial-card">
                     <p class="testimonial-quote mb-4">
                         &ldquo;Great results and a very professional team. Our online presence has improved a lot.&rdquo;
@@ -615,7 +615,7 @@ $this->params['fluid'] = true; // Full-width section styling
             </div>
 
             <!-- Review 3 -->
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="testimonial-card">
                     <p class="testimonial-quote mb-4">
                         &ldquo;Highly recommend SARGNEXUS Digital for any business looking to grow online.&rdquo;
@@ -636,7 +636,7 @@ $this->params['fluid'] = true; // Full-width section styling
 </section>
 
 <!-- 8. BOTTOM CTA BANNER -->
-<section id="contact" class="cta-banner-section py-5 text-white">
+<section id="contact" class="cta-banner-section py-5 text-white" data-aos="fade-up">
     <div class="container custom-nav-container py-3">
         <div class="row align-items-center justify-content-between g-4">
             <div class="col-lg-7">
@@ -645,7 +645,7 @@ $this->params['fluid'] = true; // Full-width section styling
                 <p class="text-secondary mb-0">Let's find the right digital marketing plan for your business.</p>
             </div>
             <div class="col-lg-5 text-lg-end">
-                <a href="mailto:hello@sargnexus.com" class="btn btn-purple-gradient text-white fw-semibold px-4 py-3 rounded-pill d-inline-block mb-3">
+                <a href="<?= Url::to(['/site/quote']) ?>" class="btn btn-purple-gradient text-white fw-semibold px-4 py-3 rounded-pill d-inline-block mb-3">
                     Get Your Free Quote <i class="bi bi-arrow-right ms-1"></i>
                 </a>
                 <ul class="list-unstyled cta-perks d-flex flex-wrap gap-3 justify-content-lg-end mb-0">
