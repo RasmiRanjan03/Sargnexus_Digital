@@ -58,70 +58,88 @@ $this->params['fluid'] = true;
             </h2>
         </div>
 
-        <!-- 6 Distinct Service Cards (3 columns x 2 rows) -->
-        <div class="row g-4">
-            <!-- 1. SEO -->
+        <!-- 7 Service Cards matching user headings (with teal number badges 01 - 07) -->
+        <div class="row g-4 justify-content-center">
+            <!-- 01. Social Media Marketing -->
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-overlay-card">
-                    <img src="<?= Yii::getAlias('@web/images/service-seo.jpg') ?>" alt="SEO">
+                    <img src="<?= Yii::getAlias('@web/images/service-marketing.jpg') ?>" alt="Social Media Marketing">
                     <div class="service-overlay-content">
-                        <h4 class="service-card-title">SEO</h4>
-                        <p class="service-card-desc">Rank higher on Google and get more traffic.</p>
+                        <span class="service-overlay-badge">01</span>
+                        <h4 class="service-card-title">Social Media Marketing</h4>
+                        <p class="service-card-desc">Grow your audience and brand reach across key social platforms.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- 2. Online Advertising -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-overlay-card">
-                    <img src="<?= Yii::getAlias('@web/images/service-advertising.jpg') ?>" alt="Online Advertising">
-                    <div class="service-overlay-content">
-                        <h4 class="service-card-title">Online Advertising</h4>
-                        <p class="service-card-desc">Reach the right audience with targeted ads.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 3. Lead Generation -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="service-overlay-card">
-                    <img src="<?= Yii::getAlias('@web/images/service-leads.jpg') ?>" alt="Lead Generation">
-                    <div class="service-overlay-content">
-                        <h4 class="service-card-title">Lead Generation</h4>
-                        <p class="service-card-desc">Get more potential customers for your business.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 4. Branding & Design -->
+            <!-- 02. Influencer Marketing -->
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
                 <div class="service-overlay-card">
-                    <img src="<?= Yii::getAlias('@web/images/service-branding.jpg') ?>" alt="Branding & Design">
+                    <img src="<?= Yii::getAlias('@web/images/service-influencer.jpg') ?>" alt="Influencer Marketing">
                     <div class="service-overlay-content">
-                        <h4 class="service-card-title">Branding &amp; Design</h4>
-                        <p class="service-card-desc">Create a strong and memorable brand identity.</p>
+                        <span class="service-overlay-badge">02</span>
+                        <h4 class="service-card-title">Influencer Marketing</h4>
+                        <p class="service-card-desc">Connect with credible creators to authentically amplify your brand.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- 5. Reels & Social Media Content -->
+            <!-- 03. Performance Marketing -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-overlay-card">
+                    <img src="<?= Yii::getAlias('@web/images/service-advertising.jpg') ?>" alt="Performance Marketing">
+                    <div class="service-overlay-content">
+                        <span class="service-overlay-badge">03</span>
+                        <h4 class="service-card-title">Performance Marketing</h4>
+                        <p class="service-card-desc">Data-driven paid ads designed for conversions, ROI, and scale.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 04. Campaigns & BTL Activities -->
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
                 <div class="service-overlay-card">
-                    <img src="<?= Yii::getAlias('@web/images/service-reels.jpg') ?>" alt="Reels & Social Media Content">
+                    <img src="<?= Yii::getAlias('@web/images/service-campaigns-btl.jpg') ?>" alt="Campaigns & BTL Activities">
                     <div class="service-overlay-content">
-                        <h4 class="service-card-title">Reels &amp; Social Media Content</h4>
-                        <p class="service-card-desc">Engaging content to grow your online presence.</p>
+                        <span class="service-overlay-badge">04</span>
+                        <h4 class="service-card-title">Campaigns &amp; BTL Activities</h4>
+                        <p class="service-card-desc">High-impact brand activations, experiential events, and creative campaigns.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- 6. Logo Design -->
+            <!-- 05. Photoshoot & Video Shoot -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-overlay-card">
+                    <img src="<?= Yii::getAlias('@web/images/service-photoshoot.jpg') ?>" alt="Photoshoot & Video Shoot">
+                    <div class="service-overlay-content">
+                        <span class="service-overlay-badge">05</span>
+                        <h4 class="service-card-title">Photoshoot &amp; Video Shoot</h4>
+                        <p class="service-card-desc">High-end product, commercial, and brand video production.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 06. Branding -->
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
                 <div class="service-overlay-card">
-                    <img src="<?= Yii::getAlias('@web/images/service-logo.jpg') ?>" alt="Logo Design">
+                    <img src="<?= Yii::getAlias('@web/images/service-branding.jpg') ?>" alt="Branding">
                     <div class="service-overlay-content">
-                        <h4 class="service-card-title">Logo Design</h4>
-                        <p class="service-card-desc">Simple and professional logos for your business.</p>
+                        <span class="service-overlay-badge">06</span>
+                        <h4 class="service-card-title">Branding</h4>
+                        <p class="service-card-desc">Build an iconic identity, guidelines, and visual language that lasts.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 07. PR Marketing -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-overlay-card">
+                    <img src="<?= Yii::getAlias('@web/images/service-pr.jpg') ?>" alt="PR Marketing">
+                    <div class="service-overlay-content">
+                        <span class="service-overlay-badge">07</span>
+                        <h4 class="service-card-title">PR Marketing</h4>
+                        <p class="service-card-desc">Earned media visibility, press releases, and brand reputation building.</p>
                     </div>
                 </div>
             </div>
@@ -166,66 +184,79 @@ $this->params['fluid'] = true;
     </div>
 </section>
 
-<!-- 4. OUR PROCESS: 4-STEP TIMELINE -->
-<section class="process-section py-5">
+<!-- 4. OUR PROCESS: 4-STEP PREMIUM INTERACTIVE WORKFLOW -->
+<section class="process-section py-5 my-lg-4 position-relative">
     <div class="container custom-nav-container">
         <div class="text-center mb-5" data-aos="fade-up">
-            <span class="section-tag text-uppercase mb-2 d-inline-block">OUR PROCESS</span>
-            <h2 class="section-title">
+            <div class="d-inline-flex align-items-center gap-2 mb-2">
+                <span class="section-mini-bar"></span>
+                <span class="section-label-text">HOW WE WORK</span>
+                <span class="section-mini-bar"></span>
+            </div>
+            <h2 class="section-title mb-2">
                 A Simple <span class="text-purple">Process</span>
             </h2>
+            <p class="section-subtitle mx-auto" style="max-width: 520px;">
+                From first discovery to tangible growth, here is how we partner with your business every step of the way.
+            </p>
         </div>
 
         <div class="row g-4 position-relative process-steps-row">
-            <!-- Connecting dashed line -->
-            <div class="process-line-connector d-none d-lg-block"></div>
 
-            <!-- Step 1 -->
-            <div class="col-lg-3 col-6 text-center" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-node mb-3">
-                    <span class="process-number">01</span>
-                    <div class="process-icon-circle">
-                        <i class="bi bi-chat-dots-fill"></i>
+            <!-- Step 1: Understand -->
+            <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="process-step-card text-center h-100">
+                    <div class="process-node-wrapper mb-4">
+                        <div class="process-icon-circle">
+                            <i class="bi bi-chat-dots-fill"></i>
+                        </div>
+                        <span class="process-number-badge">01</span>
                     </div>
+                    <h4 class="process-step-title mb-2">Understand</h4>
+                    <p class="process-step-desc mb-0">We dive deep into your brand, target audience, and business goals.</p>
                 </div>
-                <h5 class="fw-bold mb-1 fs-6">Understand</h5>
-                <p class="text-secondary small mb-0">We learn your goals.</p>
             </div>
 
-            <!-- Step 2 -->
-            <div class="col-lg-3 col-6 text-center" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-node mb-3">
-                    <span class="process-number">02</span>
-                    <div class="process-icon-circle">
-                        <i class="bi bi-lightbulb-fill"></i>
+            <!-- Step 2: Plan -->
+            <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="process-step-card text-center h-100">
+                    <div class="process-node-wrapper mb-4">
+                        <div class="process-icon-circle">
+                            <i class="bi bi-lightbulb-fill"></i>
+                        </div>
+                        <span class="process-number-badge">02</span>
                     </div>
+                    <h4 class="process-step-title mb-2">Plan</h4>
+                    <p class="process-step-desc mb-0">We craft a tailored roadmap and creative strategy focused on ROI.</p>
                 </div>
-                <h5 class="fw-bold mb-1 fs-6">Plan</h5>
-                <p class="text-secondary small mb-0">We create the right strategy.</p>
             </div>
 
-            <!-- Step 3 -->
-            <div class="col-lg-3 col-6 text-center" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-node mb-3">
-                    <span class="process-number">03</span>
-                    <div class="process-icon-circle">
-                        <i class="bi bi-gear-fill"></i>
+            <!-- Step 3: Create -->
+            <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="process-step-card text-center h-100">
+                    <div class="process-node-wrapper mb-4">
+                        <div class="process-icon-circle">
+                            <i class="bi bi-gear-fill"></i>
+                        </div>
+                        <span class="process-number-badge">03</span>
                     </div>
+                    <h4 class="process-step-title mb-2">Create</h4>
+                    <p class="process-step-desc mb-0">We design, produce, and launch high-impact campaigns with precision.</p>
                 </div>
-                <h5 class="fw-bold mb-1 fs-6">Create</h5>
-                <p class="text-secondary small mb-0">We design and execute.</p>
             </div>
 
-            <!-- Step 4 -->
-            <div class="col-lg-3 col-6 text-center" data-aos="fade-up" data-aos-delay="400">
-                <div class="process-node mb-3">
-                    <span class="process-number">04</span>
-                    <div class="process-icon-circle">
-                        <i class="bi bi-bar-chart-line-fill"></i>
+            <!-- Step 4: Grow -->
+            <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="process-step-card text-center h-100">
+                    <div class="process-node-wrapper mb-4">
+                        <div class="process-icon-circle">
+                            <i class="bi bi-bar-chart-line-fill"></i>
+                        </div>
+                        <span class="process-number-badge">04</span>
                     </div>
+                    <h4 class="process-step-title mb-2">Grow</h4>
+                    <p class="process-step-desc mb-0">Measure, optimize, and scale results to ensure long-term business growth.</p>
                 </div>
-                <h5 class="fw-bold mb-1 fs-6">Grow</h5>
-                <p class="text-secondary small mb-0">You get real results.</p>
             </div>
         </div>
     </div>

@@ -33,12 +33,13 @@ use yii\helpers\Url;
             <div class="col-lg-3 col-6">
                 <h6 class="footer-heading mb-3 text-white fw-bold">Services</h6>
                 <ul class="list-unstyled footer-links small">
-                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">SEO</a></li>
-                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Online Advertising</a></li>
-                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Lead Generation</a></li>
-                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Branding &amp; Design</a></li>
-                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Reels &amp; Social Media Content</a></li>
-                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Logo Design</a></li>
+                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Social Media Marketing</a></li>
+                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Influencer Marketing</a></li>
+                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Performance Marketing</a></li>
+                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Campaigns &amp; BTL Activities</a></li>
+                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Photoshoot &amp; Video Shoot</a></li>
+                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Branding</a></li>
+                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">PR Marketing</a></li>
                 </ul>
             </div>
 
@@ -48,6 +49,7 @@ use yii\helpers\Url;
                 <ul class="list-unstyled footer-links small">
                     <li class="mb-2"><a href="<?= Url::to(['/site/index']) ?>">Home</a></li>
                     <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Services</a></li>
+                    <li class="mb-2"><a href="<?= Url::to(['/site/projects']) ?>">Projects</a></li>
                     <li class="mb-2"><a href="<?= Url::to(['/site/quote']) ?>">Get a Quote</a></li>
                 </ul>
             </div>

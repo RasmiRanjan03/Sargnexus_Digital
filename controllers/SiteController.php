@@ -176,6 +176,16 @@ class SiteController extends Controller
     }
 
     /**
+     * Displays projects portfolio page.
+     *
+     * @return string
+     */
+    public function actionProjects(): string
+    {
+        return $this->render('projects');
+    }
+
+    /**
      * Displays about page.
      *
      * @return string

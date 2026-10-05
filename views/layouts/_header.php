@@ -35,6 +35,9 @@ $currentAction = Yii::$app->controller->action->id;
                     <li class="nav-item">
                         <a class="nav-link nav-link-custom <?= $currentAction === 'services' ? 'active' : '' ?>" href="<?= Url::to(['/site/services']) ?>">Services</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom <?= $currentAction === 'projects' ? 'active' : '' ?>" href="<?= Url::to(['/site/projects']) ?>">Projects</a>
+                    </li>
                 </ul>
 
                 <div class="d-flex align-items-center gap-3">
