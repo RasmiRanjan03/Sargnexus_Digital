@@ -12,8 +12,9 @@ $this->params['fluid'] = true; // Full-width section styling
 
 <!-- 1. HERO SECTION -->
 <section class="hero-section text-white">
+    <img src="<?= Yii::getAlias('@web/images/hero-laptop.jpg') ?>" alt="Digital Marketing Growth" class="hero-bg-cover">
     <div class="hero-bg-gradient"></div>
-    <div class="container custom-nav-container">
+    <div class="container custom-nav-container hero-content-layer">
         <div class="row align-items-center g-5">
             <!-- Left Hero Content -->
             <div class="col-lg-6 z-2" data-aos="fade-right" data-aos-duration="900">
@@ -37,16 +38,13 @@ $this->params['fluid'] = true; // Full-width section styling
                 </div>
             </div>
 
-            <!-- Right Hero Image with Laptop Analytics -->
-            <div class="col-lg-6 position-relative" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
-                <div class="hero-badge-corner d-none d-md-block">
+            <!-- Right Hero Badge / Accents (Laptop is now the background cover) -->
+            <div class="col-lg-6 position-relative d-none d-lg-block" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
+                <div class="hero-badge-corner">
                     <span class="handwritten-badge">
                         Your<br>Growth<br>Partner
                     </span>
                     <span class="curved-arrow"></span>
-                </div>
-                <div class="hero-image-wrapper">
-                    <img src="<?= Yii::getAlias('@web/images/hero-laptop.jpg') ?>" alt="Digital Marketing Growth Analytics Dashboard" class="hero-image img-fluid">
                 </div>
             </div>
         </div>
@@ -77,19 +75,19 @@ $this->params['fluid'] = true; // Full-width section styling
 
                 <!-- Stats Bar -->
                 <div class="row g-3 border-top pt-4">
-                    <div class="col-3 stat-item">
+                    <div class="col-6 col-sm-3 stat-item">
                         <h3 class="fw-bold mb-0">50+</h3>
                         <small class="text-secondary">Businesses Reached</small>
                     </div>
-                    <div class="col-3 stat-item">
+                    <div class="col-6 col-sm-3 stat-item">
                         <h3 class="fw-bold mb-0">100+</h3>
                         <small class="text-secondary">Projects Completed</small>
                     </div>
-                    <div class="col-3 stat-item">
+                    <div class="col-6 col-sm-3 stat-item">
                         <h3 class="fw-bold mb-0">8+</h3>
                         <small class="text-secondary">Digital Services</small>
                     </div>
-                    <div class="col-3 stat-item">
+                    <div class="col-6 col-sm-3 stat-item">
                         <h3 class="fw-bold mb-0">24/7</h3>
                         <small class="text-secondary">Support</small>
                     </div>
@@ -140,74 +138,90 @@ $this->params['fluid'] = true; // Full-width section styling
             </a>
         </div>
 
-        <!-- 8 Services 4-Column Grid -->
-        <div class="row g-4">
-            <!-- 1. Digital Marketing -->
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <!-- 7 Services Grid matching Services Page -->
+        <div class="row g-4 justify-content-center">
+            <!-- 1. Social Media Marketing -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-card h-100">
                     <div class="service-card-img-wrapper">
-                        <img src="<?= Yii::getAlias('@web/images/service-marketing.jpg') ?>" alt="Digital Marketing">
+                        <img src="<?= Yii::getAlias('@web/images/service-marketing.jpg') ?>" alt="Social Media Marketing">
                     </div>
                     <div class="service-card-body">
                         <div class="d-flex justify-content-between align-items-center mb-1">
-                            <h5 class="fw-bold mb-0 fs-6">Digital Marketing</h5>
+                            <h5 class="fw-bold mb-0 fs-6">Social Media Marketing</h5>
                             <span class="service-plus-btn"><i class="bi bi-plus-lg"></i></span>
                         </div>
-                        <p class="text-secondary small mb-0">A complete strategy built around your business goals.</p>
+                        <p class="text-secondary small mb-0">Grow your audience and brand reach across key social platforms.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- 2. Online Advertising -->
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <!-- 2. Influencer Marketing -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
                 <div class="service-card h-100">
                     <div class="service-card-img-wrapper">
-                        <img src="<?= Yii::getAlias('@web/images/service-advertising.jpg') ?>" alt="Online Advertising">
+                        <img src="<?= Yii::getAlias('@web/images/service-influencer.jpg') ?>" alt="Influencer Marketing">
                     </div>
                     <div class="service-card-body">
                         <div class="d-flex justify-content-between align-items-center mb-1">
-                            <h5 class="fw-bold mb-0 fs-6">Online Advertising</h5>
+                            <h5 class="fw-bold mb-0 fs-6">Influencer Marketing</h5>
                             <span class="service-plus-btn"><i class="bi bi-plus-lg"></i></span>
                         </div>
-                        <p class="text-secondary small mb-0">Reach the right people with targeted ads.</p>
+                        <p class="text-secondary small mb-0">Connect with credible creators to authentically amplify your brand.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- 3. SEO -->
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <!-- 3. Performance Marketing -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="service-card h-100">
                     <div class="service-card-img-wrapper">
-                        <img src="<?= Yii::getAlias('@web/images/service-seo.jpg') ?>" alt="SEO">
+                        <img src="<?= Yii::getAlias('@web/images/service-advertising.jpg') ?>" alt="Performance Marketing">
                     </div>
                     <div class="service-card-body">
                         <div class="d-flex justify-content-between align-items-center mb-1">
-                            <h5 class="fw-bold mb-0 fs-6">SEO</h5>
+                            <h5 class="fw-bold mb-0 fs-6">Performance Marketing</h5>
                             <span class="service-plus-btn"><i class="bi bi-plus-lg"></i></span>
                         </div>
-                        <p class="text-secondary small mb-0">Help your business rank higher on Google.</p>
+                        <p class="text-secondary small mb-0">Data-driven paid ads designed for conversions, ROI, and scale.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- 4. Lead Generation -->
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <!-- 4. Campaigns & BTL Activities -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
                 <div class="service-card h-100">
                     <div class="service-card-img-wrapper">
-                        <img src="<?= Yii::getAlias('@web/images/service-leads.jpg') ?>" alt="Lead Generation">
+                        <img src="<?= Yii::getAlias('@web/images/service-campaigns-btl.jpg') ?>" alt="Campaigns & BTL Activities">
                     </div>
                     <div class="service-card-body">
                         <div class="d-flex justify-content-between align-items-center mb-1">
-                            <h5 class="fw-bold mb-0 fs-6">Lead Generation</h5>
+                            <h5 class="fw-bold mb-0 fs-6">Campaigns &amp; BTL Activities</h5>
                             <span class="service-plus-btn"><i class="bi bi-plus-lg"></i></span>
                         </div>
-                        <p class="text-secondary small mb-0">Bring more potential customers to your business.</p>
+                        <p class="text-secondary small mb-0">High-impact brand activations, experiential events, and creative campaigns.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- 5. Branding -->
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <!-- 5. Photoshoot & Video Shoot -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card h-100">
+                    <div class="service-card-img-wrapper">
+                        <img src="<?= Yii::getAlias('@web/images/service-photoshoot.jpg') ?>" alt="Photoshoot & Video Shoot">
+                    </div>
+                    <div class="service-card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <h5 class="fw-bold mb-0 fs-6">Photoshoot &amp; Video Shoot</h5>
+                            <span class="service-plus-btn"><i class="bi bi-plus-lg"></i></span>
+                        </div>
+                        <p class="text-secondary small mb-0">High-end product, commercial, and brand video production.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Branding -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
                 <div class="service-card h-100">
                     <div class="service-card-img-wrapper">
                         <img src="<?= Yii::getAlias('@web/images/service-branding.jpg') ?>" alt="Branding">
@@ -217,55 +231,23 @@ $this->params['fluid'] = true; // Full-width section styling
                             <h5 class="fw-bold mb-0 fs-6">Branding</h5>
                             <span class="service-plus-btn"><i class="bi bi-plus-lg"></i></span>
                         </div>
-                        <p class="text-secondary small mb-0">Build a brand people can recognize and remember.</p>
+                        <p class="text-secondary small mb-0">Build an iconic identity, guidelines, and visual language that lasts.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- 6. Graphics Design -->
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <!-- 7. PR Marketing -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                 <div class="service-card h-100">
                     <div class="service-card-img-wrapper">
-                        <img src="<?= Yii::getAlias('@web/images/service-graphics.jpg') ?>" alt="Graphics Design">
+                        <img src="<?= Yii::getAlias('@web/images/service-pr.jpg') ?>" alt="PR Marketing">
                     </div>
                     <div class="service-card-body">
                         <div class="d-flex justify-content-between align-items-center mb-1">
-                            <h5 class="fw-bold mb-0 fs-6">Graphics Design</h5>
+                            <h5 class="fw-bold mb-0 fs-6">PR Marketing</h5>
                             <span class="service-plus-btn"><i class="bi bi-plus-lg"></i></span>
                         </div>
-                        <p class="text-secondary small mb-0">Create visuals that make your business look professional.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 7. Reels & Social Media Content -->
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-card h-100">
-                    <div class="service-card-img-wrapper">
-                        <img src="<?= Yii::getAlias('@web/images/service-reels.jpg') ?>" alt="Reels & Social Media Content">
-                    </div>
-                    <div class="service-card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-1">
-                            <h5 class="fw-bold mb-0 fs-6">Reels &amp; Social Content</h5>
-                            <span class="service-plus-btn"><i class="bi bi-plus-lg"></i></span>
-                        </div>
-                        <p class="text-secondary small mb-0">Create content that gets attention and builds engagement.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 8. Logo Design -->
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
-                <div class="service-card h-100">
-                    <div class="service-card-img-wrapper">
-                        <img src="<?= Yii::getAlias('@web/images/service-logo.jpg') ?>" alt="Logo Design">
-                    </div>
-                    <div class="service-card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-1">
-                            <h5 class="fw-bold mb-0 fs-6">Logo Design</h5>
-                            <span class="service-plus-btn"><i class="bi bi-plus-lg"></i></span>
-                        </div>
-                        <p class="text-secondary small mb-0">Create a simple, memorable identity for your business.</p>
+                        <p class="text-secondary small mb-0">Earned media visibility, press releases, and brand reputation building.</p>
                     </div>
                 </div>
             </div>
@@ -433,7 +415,7 @@ $this->params['fluid'] = true; // Full-width section styling
                     <div>
                         <div class="pricing-plan-badge text-uppercase mb-2">PREMIUM</div>
                         <div class="d-flex align-items-baseline gap-1 mb-1">
-                            <span class="pricing-price">&#8377;39,999</span>
+                            <span class="pricing-price">&#8377;29,999</span>
                             <span class="pricing-period">/ month</span>
                         </div>
                         <p class="text-secondary small mb-4">For a complete marketing solution.</p>

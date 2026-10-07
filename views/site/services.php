@@ -12,8 +12,9 @@ $this->params['fluid'] = true;
 
 <!-- 1. SERVICES HERO SECTION -->
 <section class="services-hero-section position-relative text-white">
+    <img src="<?= Yii::getAlias('@web/images/services-hero-laptop.jpg') ?>" alt="Services Growth" class="hero-bg-cover">
     <div class="hero-bg-gradient"></div>
-    <div class="container custom-nav-container">
+    <div class="container custom-nav-container hero-content-layer">
         <!-- Breadcrumbs -->
         <nav aria-label="breadcrumb" class="mb-3">
             <ol class="breadcrumb custom-breadcrumb mb-0">
@@ -65,7 +66,6 @@ $this->params['fluid'] = true;
                 <div class="service-overlay-card">
                     <img src="<?= Yii::getAlias('@web/images/service-marketing.jpg') ?>" alt="Social Media Marketing">
                     <div class="service-overlay-content">
-                        <span class="service-overlay-badge">01</span>
                         <h4 class="service-card-title">Social Media Marketing</h4>
                         <p class="service-card-desc">Grow your audience and brand reach across key social platforms.</p>
                     </div>
@@ -77,7 +77,6 @@ $this->params['fluid'] = true;
                 <div class="service-overlay-card">
                     <img src="<?= Yii::getAlias('@web/images/service-influencer.jpg') ?>" alt="Influencer Marketing">
                     <div class="service-overlay-content">
-                        <span class="service-overlay-badge">02</span>
                         <h4 class="service-card-title">Influencer Marketing</h4>
                         <p class="service-card-desc">Connect with credible creators to authentically amplify your brand.</p>
                     </div>
@@ -89,7 +88,6 @@ $this->params['fluid'] = true;
                 <div class="service-overlay-card">
                     <img src="<?= Yii::getAlias('@web/images/service-advertising.jpg') ?>" alt="Performance Marketing">
                     <div class="service-overlay-content">
-                        <span class="service-overlay-badge">03</span>
                         <h4 class="service-card-title">Performance Marketing</h4>
                         <p class="service-card-desc">Data-driven paid ads designed for conversions, ROI, and scale.</p>
                     </div>
@@ -101,7 +99,6 @@ $this->params['fluid'] = true;
                 <div class="service-overlay-card">
                     <img src="<?= Yii::getAlias('@web/images/service-campaigns-btl.jpg') ?>" alt="Campaigns & BTL Activities">
                     <div class="service-overlay-content">
-                        <span class="service-overlay-badge">04</span>
                         <h4 class="service-card-title">Campaigns &amp; BTL Activities</h4>
                         <p class="service-card-desc">High-impact brand activations, experiential events, and creative campaigns.</p>
                     </div>
@@ -113,7 +110,6 @@ $this->params['fluid'] = true;
                 <div class="service-overlay-card">
                     <img src="<?= Yii::getAlias('@web/images/service-photoshoot.jpg') ?>" alt="Photoshoot & Video Shoot">
                     <div class="service-overlay-content">
-                        <span class="service-overlay-badge">05</span>
                         <h4 class="service-card-title">Photoshoot &amp; Video Shoot</h4>
                         <p class="service-card-desc">High-end product, commercial, and brand video production.</p>
                     </div>
@@ -125,7 +121,6 @@ $this->params['fluid'] = true;
                 <div class="service-overlay-card">
                     <img src="<?= Yii::getAlias('@web/images/service-branding.jpg') ?>" alt="Branding">
                     <div class="service-overlay-content">
-                        <span class="service-overlay-badge">06</span>
                         <h4 class="service-card-title">Branding</h4>
                         <p class="service-card-desc">Build an iconic identity, guidelines, and visual language that lasts.</p>
                     </div>
@@ -137,7 +132,6 @@ $this->params['fluid'] = true;
                 <div class="service-overlay-card">
                     <img src="<?= Yii::getAlias('@web/images/service-pr.jpg') ?>" alt="PR Marketing">
                     <div class="service-overlay-content">
-                        <span class="service-overlay-badge">07</span>
                         <h4 class="service-card-title">PR Marketing</h4>
                         <p class="service-card-desc">Earned media visibility, press releases, and brand reputation building.</p>
                     </div>
@@ -210,7 +204,6 @@ $this->params['fluid'] = true;
                         <div class="process-icon-circle">
                             <i class="bi bi-chat-dots-fill"></i>
                         </div>
-                        <span class="process-number-badge">01</span>
                     </div>
                     <h4 class="process-step-title mb-2">Understand</h4>
                     <p class="process-step-desc mb-0">We dive deep into your brand, target audience, and business goals.</p>
@@ -224,7 +217,6 @@ $this->params['fluid'] = true;
                         <div class="process-icon-circle">
                             <i class="bi bi-lightbulb-fill"></i>
                         </div>
-                        <span class="process-number-badge">02</span>
                     </div>
                     <h4 class="process-step-title mb-2">Plan</h4>
                     <p class="process-step-desc mb-0">We craft a tailored roadmap and creative strategy focused on ROI.</p>
@@ -238,7 +230,6 @@ $this->params['fluid'] = true;
                         <div class="process-icon-circle">
                             <i class="bi bi-gear-fill"></i>
                         </div>
-                        <span class="process-number-badge">03</span>
                     </div>
                     <h4 class="process-step-title mb-2">Create</h4>
                     <p class="process-step-desc mb-0">We design, produce, and launch high-impact campaigns with precision.</p>
@@ -252,7 +243,6 @@ $this->params['fluid'] = true;
                         <div class="process-icon-circle">
                             <i class="bi bi-bar-chart-line-fill"></i>
                         </div>
-                        <span class="process-number-badge">04</span>
                     </div>
                     <h4 class="process-step-title mb-2">Grow</h4>
                     <p class="process-step-desc mb-0">Measure, optimize, and scale results to ensure long-term business growth.</p>
@@ -319,16 +309,16 @@ $this->params['fluid'] = true;
             <div class="row align-items-center justify-content-between g-3">
                 <div class="col-md-8 d-flex align-items-center gap-3">
                     <div class="email-strip-icon flex-shrink-0">
-                        <i class="bi bi-envelope-fill text-white fs-4"></i>
+                        <i class="bi bi-whatsapp text-white fs-4"></i>
                     </div>
                     <div>
                         <span class="email-strip-tag text-uppercase fw-bold d-block mb-1">HAVE A QUESTION?</span>
-                        <h4 class="fw-bold mb-1 fs-5 text-dark">Prefer to Contact Us via Email?</h4>
+                        <h4 class="fw-bold mb-1 fs-5 text-dark">Prefer to Contact Us via Whatsapp?</h4>
                         <p class="text-secondary small mb-0">Drop us a message and we'll get back to you as soon as possible.</p>
                     </div>
                 </div>
                 <div class="col-md-4 text-md-end">
-                    <a href="https://wa.me/918763585769" target="_blank" rel="noopener noreferrer" class="btn btn-purple-gradient text-white fw-semibold rounded-pill px-4 py-2">
+                    <a href="https://wa.me/918917237415" target="_blank" rel="noopener noreferrer" class="btn btn-purple-gradient text-white fw-semibold rounded-pill px-4 py-2">
                         <i class="bi bi-whatsapp me-1"></i> Send us a message <i class="bi bi-arrow-right ms-1"></i>
                     </a>
                 </div>

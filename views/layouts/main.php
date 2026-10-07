@@ -41,7 +41,7 @@ $this->render('_head');
 <?= $this->render('_footer') ?>
 
 <!-- Floating WhatsApp Button -->
-<a href="https://wa.me/918763585769" target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Chat with us on WhatsApp">
+<a href="https://wa.me/918917237415" target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Chat with us on WhatsApp">
     <i class="bi bi-whatsapp"></i>
 </a>
 
@@ -53,7 +53,8 @@ $this->render('_head');
             duration: 800,
             easing: 'ease-out-cubic',
             once: true,
-            offset: 60
+            offset: 60,
+            disable: 'mobile'
         });
     });
 </script>

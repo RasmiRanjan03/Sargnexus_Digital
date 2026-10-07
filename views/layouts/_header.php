@@ -21,14 +21,14 @@ $currentAction = Yii::$app->controller->action->id;
                 </div>
             </a>
 
-            <!-- Mobile Toggle -->
-            <button class="navbar-toggler border-0 shadow-none text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi bi-list fs-2"></i>
+            <!-- Mobile Toggle / Menu Button -->
+            <button class="navbar-toggler custom-mobile-menu-btn border-0 shadow-none d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-4"></i>
             </button>
 
-            <!-- Only 3 Pages: Home, Services, and Get a Quote -->
+            <!-- Navigation Links -->
             <div class="collapse navbar-collapse" id="navbarMain">
-                <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-4 mb-2 mb-lg-0">
+                <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-4 mb-3 mb-lg-0 py-3 py-lg-0">
                     <li class="nav-item">
                         <a class="nav-link nav-link-custom <?= $currentAction === 'index' ? 'active' : '' ?>" href="<?= Url::to(['/site/index']) ?>">Home</a>
                     </li>
@@ -40,8 +40,8 @@ $currentAction = Yii::$app->controller->action->id;
                     </li>
                 </ul>
 
-                <div class="d-flex align-items-center gap-3">
-                    <a href="<?= Url::to(['/site/quote']) ?>" class="btn btn-purple-gradient text-white fw-semibold px-4 py-2 rounded-pill shadow-sm">
+                <div class="d-flex align-items-center gap-3 pt-2 pt-lg-0 pb-3 pb-lg-0 border-top border-secondary border-opacity-25 border-top-lg-0">
+                    <a href="<?= Url::to(['/site/quote']) ?>" class="btn btn-purple-gradient text-white fw-semibold px-4 py-2 rounded-pill shadow-sm w-100 w-lg-auto text-center">
                         Get a Quote <i class="bi bi-arrow-right ms-1"></i>
                     </a>
                 </div>

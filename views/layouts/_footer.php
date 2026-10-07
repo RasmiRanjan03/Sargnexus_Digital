@@ -60,11 +60,11 @@ use yii\helpers\Url;
                 <ul class="list-unstyled footer-contact small text-secondary">
                     <li class="mb-2 d-flex align-items-center gap-2">
                         <i class="bi bi-envelope text-white-50"></i>
-                        <a href="mailto:hello@sargnexus.com" class="text-secondary text-decoration-none hover-light">hello@sargnexus.com</a>
+                        <a href="mailto:digital@sargnexus.com" class="text-secondary text-decoration-none hover-light">digital@sargnexus.com</a>
                     </li>
                     <li class="mb-2 d-flex align-items-center gap-2">
                         <i class="bi bi-telephone text-white-50"></i>
-                        <a href="tel:+918763585769" class="text-secondary text-decoration-none hover-light">+91 8763585769</a>
+                        <a href="tel:+918917237415" class="text-secondary text-decoration-none hover-light">+91 8917237415</a>
                     </li>
                     <li class="mb-3 d-flex align-items-center gap-2">
                         <i class="bi bi-geo-alt text-white-50"></i>

@@ -14,8 +14,9 @@ $this->params['fluid'] = true;
 
 <!-- 1. PROJECTS HERO SECTION (DARK BACKGROUND WITH LAPTOP SHOWCASE) -->
 <section class="projects-hero-section position-relative text-white">
+    <img src="<?= Yii::getAlias('@web/images/projects-hero-laptop.jpg') ?>" alt="Our Projects Creative Showcase" class="hero-bg-cover">
     <div class="hero-bg-gradient"></div>
-    <div class="container custom-nav-container">
+    <div class="container custom-nav-container hero-content-layer">
         <!-- Breadcrumbs -->
         <nav aria-label="breadcrumb" class="mb-4">
             <ol class="breadcrumb custom-breadcrumb mb-0">
@@ -67,156 +68,185 @@ $this->params['fluid'] = true;
 <!-- 2. BRANDS THAT TRUST US (NATIONAL & REGIONAL CLIENTS) -->
 <section class="clients-section py-5 my-lg-2">
     <div class="container custom-nav-container">
-        <!-- Section Header with Arrows -->
-        <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 pb-2" data-aos="fade-up">
-            <div>
-                <div class="d-flex align-items-center gap-2 mb-2">
-                    <span class="section-mini-bar"></span>
-                    <span class="section-label-text">Our Clients</span>
-                </div>
-                <h2 class="section-title mb-0">
-                    Brands That <span class="text-purple">Trust Us</span>
-                </h2>
+        <!-- Section Header -->
+        <div class="text-center mb-4 pb-2" data-aos="fade-up">
+            <div class="d-inline-flex align-items-center gap-2 mb-2">
+                <span class="section-mini-bar"></span>
+                <span class="section-label-text">Our Clients</span>
+                <span class="section-mini-bar"></span>
             </div>
-            <!-- Slider Navigation Arrows -->
-            <div class="d-flex align-items-center gap-2 mt-3 mt-sm-0">
-                <button type="button" class="btn-nav-circle" aria-label="Previous Clients">
-                    <i class="bi bi-chevron-left"></i>
-                </button>
-                <button type="button" class="btn-nav-circle" aria-label="Next Clients">
-                    <i class="bi bi-chevron-right"></i>
-                </button>
+            <h2 class="section-title mb-0">
+                Brands That <span class="text-purple">Trust Us</span>
+            </h2>
+        </div>
+    </div>
+
+    <!-- Auto-scrolling Row 1 (National Clients) -->
+    <div class="clients-marquee-wrapper mb-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="clients-marquee-track">
+            <!-- Set 1 -->
+            <div class="client-logo-card">
+                <span class="d-block fw-bold tracking-wider fs-5" style="color: #0d9488; font-family: serif; letter-spacing: 0.15em;">TANISHQ</span>
+            </div>
+            <div class="client-logo-card">
+                <div class="px-2 py-1 rounded border border-secondary border-opacity-25 bg-light text-center">
+                    <span class="d-block fw-bold text-dark fs-6" style="letter-spacing: -0.02em;">Joyalukkas</span>
+                    <span style="font-size: 8px; color: #64748b; display: block; line-height: 1;">World's favourite jeweller</span>
+                </div>
+            </div>
+            <div class="client-logo-card">
+                <div class="d-flex align-items-center gap-1">
+                    <span class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center" style="width: 18px; height: 18px; font-size: 11px;">R</span>
+                    <span class="fw-bold" style="color: #0284c7; font-size: 0.95rem; letter-spacing: -0.02em;">reliancedigital</span>
+                </div>
+            </div>
+            <div class="client-logo-card">
+                <div class="text-center">
+                    <span class="d-block fw-black text-dark" style="font-size: 0.82rem; letter-spacing: 0.18em; font-weight: 800;">GEETANJALI</span>
+                    <span style="font-size: 9px; color: #64748b; letter-spacing: 0.25em; display: block;">SALON</span>
+                </div>
+            </div>
+            <div class="client-logo-card">
+                <div class="d-flex align-items-center gap-1">
+                    <i class="bi bi-person-arms-up text-primary fs-5"></i>
+                    <div class="lh-1 text-start">
+                        <span class="fw-bold text-primary d-block" style="font-size: 0.95rem; font-style: italic;">FinOlex</span>
+                        <span class="text-primary fw-semibold" style="font-size: 9px; letter-spacing: 0.15em;">PIPES</span>
+                    </div>
+                </div>
+            </div>
+            <div class="client-logo-card">
+                <div class="text-center">
+                    <i class="bi bi-badge-hd text-dark fs-4 d-block lh-1"></i>
+                    <span class="fw-bold text-dark" style="font-size: 0.75rem; letter-spacing: 0.2em;">HYUNDAI</span>
+                </div>
+            </div>
+
+            <!-- Set 1 Duplicate for Seamless Loop -->
+            <div class="client-logo-card">
+                <span class="d-block fw-bold tracking-wider fs-5" style="color: #0d9488; font-family: serif; letter-spacing: 0.15em;">TANISHQ</span>
+            </div>
+            <div class="client-logo-card">
+                <div class="px-2 py-1 rounded border border-secondary border-opacity-25 bg-light text-center">
+                    <span class="d-block fw-bold text-dark fs-6" style="letter-spacing: -0.02em;">Joyalukkas</span>
+                    <span style="font-size: 8px; color: #64748b; display: block; line-height: 1;">World's favourite jeweller</span>
+                </div>
+            </div>
+            <div class="client-logo-card">
+                <div class="d-flex align-items-center gap-1">
+                    <span class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center" style="width: 18px; height: 18px; font-size: 11px;">R</span>
+                    <span class="fw-bold" style="color: #0284c7; font-size: 0.95rem; letter-spacing: -0.02em;">reliancedigital</span>
+                </div>
+            </div>
+            <div class="client-logo-card">
+                <div class="text-center">
+                    <span class="d-block fw-black text-dark" style="font-size: 0.82rem; letter-spacing: 0.18em; font-weight: 800;">GEETANJALI</span>
+                    <span style="font-size: 9px; color: #64748b; letter-spacing: 0.25em; display: block;">SALON</span>
+                </div>
+            </div>
+            <div class="client-logo-card">
+                <div class="d-flex align-items-center gap-1">
+                    <i class="bi bi-person-arms-up text-primary fs-5"></i>
+                    <div class="lh-1 text-start">
+                        <span class="fw-bold text-primary d-block" style="font-size: 0.95rem; font-style: italic;">FinOlex</span>
+                        <span class="text-primary fw-semibold" style="font-size: 9px; letter-spacing: 0.15em;">PIPES</span>
+                    </div>
+                </div>
+            </div>
+            <div class="client-logo-card">
+                <div class="text-center">
+                    <i class="bi bi-badge-hd text-dark fs-4 d-block lh-1"></i>
+                    <span class="fw-bold text-dark" style="font-size: 0.75rem; letter-spacing: 0.2em;">HYUNDAI</span>
+                </div>
             </div>
         </div>
+    </div>
 
-        <!-- Group 1: Our National Clients -->
-        <div class="mb-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="section-subheading-tag mb-3">
-                <span>OUR NATIONAL CLIENTS</span>
+    <!-- Auto-scrolling Row 2 (Regional Clients - smooth opposite or continuous direction) -->
+    <div class="clients-marquee-wrapper" data-aos="fade-up" data-aos-delay="200">
+        <div class="clients-marquee-track track-reverse">
+            <!-- Set 2 -->
+            <div class="client-logo-card">
+                <div class="text-center">
+                    <span class="fw-black text-dark d-block lh-1" style="font-size: 1.15rem; font-weight: 900; letter-spacing: -0.05em;">iDA</span>
+                    <span style="font-size: 9px; color: #475569; letter-spacing: 0.12em; display: block;">DREAM ASSETS</span>
+                </div>
             </div>
-            <div class="row g-3 row-cols-2 row-cols-md-3 row-cols-lg-6">
-                <!-- Tanishq -->
-                <div class="col">
-                    <div class="client-logo-card">
-                        <div class="text-center">
-                            <span class="d-block fw-bold tracking-wider fs-5" style="color: #0d9488; font-family: serif; letter-spacing: 0.15em;">TANISHQ</span>
-                        </div>
-                    </div>
+            <div class="client-logo-card">
+                <div class="text-center">
+                    <i class="bi bi-gem text-dark fs-6 d-block lh-1 mb-1"></i>
+                    <span class="d-block fw-bold text-dark" style="font-size: 0.72rem; letter-spacing: 0.1em; line-height: 1.1;">CLASSIC STONES</span>
+                    <span style="font-size: 8px; color: #64748b; letter-spacing: 0.08em;">INTERNATIONAL</span>
                 </div>
-                <!-- Joyalukkas -->
-                <div class="col">
-                    <div class="client-logo-card">
-                        <div class="px-2 py-1 rounded border border-secondary border-opacity-25 bg-light text-center">
-                            <span class="d-block fw-bold text-dark fs-6" style="letter-spacing: -0.02em;">Joyalukkas</span>
-                            <span style="font-size: 8px; color: #64748b; display: block; line-height: 1;">World's favourite jeweller</span>
-                        </div>
-                    </div>
+            </div>
+            <div class="client-logo-card">
+                <div class="text-center">
+                    <span style="font-family: 'Caveat', cursive; font-size: 1.6rem; color: #1e293b; line-height: 1;">cff</span>
+                    <span style="font-size: 8px; color: #94a3b8; display: block; letter-spacing: 0.1em;">CONTEMPO FAMILY CRAFT</span>
                 </div>
-                <!-- Reliance Digital -->
-                <div class="col">
-                    <div class="client-logo-card">
-                        <div class="d-flex align-items-center gap-1">
-                            <span class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center" style="width: 18px; height: 18px; font-size: 11px;">R</span>
-                            <span class="fw-bold" style="color: #0284c7; font-size: 0.95rem; letter-spacing: -0.02em;">reliancedigital</span>
-                        </div>
-                    </div>
+            </div>
+            <div class="client-logo-card">
+                <div class="text-center">
+                    <i class="bi bi-shield-fill-check text-dark fs-6 d-block lh-1 mb-1"></i>
+                    <span class="d-block fw-bold text-dark" style="font-size: 0.7rem; letter-spacing: 0.1em; line-height: 1.1;">ASHTASIDDHI</span>
+                    <span style="font-size: 8px; color: #64748b; letter-spacing: 0.15em;">JEWELS</span>
                 </div>
-                <!-- Geetanjali Salon -->
-                <div class="col">
-                    <div class="client-logo-card">
-                        <div class="text-center">
-                            <span class="d-block fw-black text-dark" style="font-size: 0.82rem; letter-spacing: 0.18em; font-weight: 800;">GEETANJALI</span>
-                            <span style="font-size: 9px; color: #64748b; letter-spacing: 0.25em; display: block;">SALON</span>
-                        </div>
-                    </div>
+            </div>
+            <div class="client-logo-card">
+                <div class="text-center">
+                    <span class="d-block text-dark fw-bold" style="font-style: italic; font-size: 0.85rem; letter-spacing: 0.02em;">Featherlite</span>
+                    <span style="font-size: 8px; color: #64748b; display: block;">by PGL Furnitures</span>
                 </div>
-                <!-- Finolex Pipes -->
-                <div class="col">
-                    <div class="client-logo-card">
-                        <div class="d-flex align-items-center gap-1">
-                            <i class="bi bi-person-arms-up text-primary fs-5"></i>
-                            <div class="lh-1 text-start">
-                                <span class="fw-bold text-primary d-block" style="font-size: 0.95rem; font-style: italic;">FinOlex</span>
-                                <span class="text-primary fw-semibold" style="font-size: 9px; letter-spacing: 0.15em;">PIPES</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Hyundai -->
-                <div class="col">
-                    <div class="client-logo-card">
-                        <div class="text-center">
-                            <i class="bi bi-badge-hd text-dark fs-4 d-block lh-1"></i>
-                            <span class="fw-bold text-dark" style="font-size: 0.75rem; letter-spacing: 0.2em;">HYUNDAI</span>
-                        </div>
+            </div>
+            <div class="client-logo-card">
+                <div class="d-flex align-items-center gap-1">
+                    <i class="bi bi-bullseye text-dark fs-5"></i>
+                    <div class="text-start lh-1">
+                        <span class="d-block fw-black text-dark" style="font-size: 0.75rem; font-weight: 900; letter-spacing: 0.08em;">GUPTA</span>
+                        <span style="font-size: 8px; color: #64748b; letter-spacing: 0.08em;">DISTRIBUTORS</span>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Group 2: Our Regional Clients -->
-        <div class="pt-2" data-aos="fade-up" data-aos-delay="200">
-            <div class="section-subheading-tag mb-3">
-                <span>OUR REGIONAL CLIENTS</span>
+            <!-- Set 2 Duplicate for Seamless Loop -->
+            <div class="client-logo-card">
+                <div class="text-center">
+                    <span class="fw-black text-dark d-block lh-1" style="font-size: 1.15rem; font-weight: 900; letter-spacing: -0.05em;">iDA</span>
+                    <span style="font-size: 9px; color: #475569; letter-spacing: 0.12em; display: block;">DREAM ASSETS</span>
+                </div>
             </div>
-            <div class="row g-3 row-cols-2 row-cols-md-3 row-cols-lg-6">
-                <!-- Dream Assets (IDA) -->
-                <div class="col">
-                    <div class="client-logo-card">
-                        <div class="text-center">
-                            <span class="fw-black text-dark d-block lh-1" style="font-size: 1.15rem; font-weight: 900; letter-spacing: -0.05em;">iDA</span>
-                            <span style="font-size: 9px; color: #475569; letter-spacing: 0.12em; display: block;">DREAM ASSETS</span>
-                        </div>
-                    </div>
+            <div class="client-logo-card">
+                <div class="text-center">
+                    <i class="bi bi-gem text-dark fs-6 d-block lh-1 mb-1"></i>
+                    <span class="d-block fw-bold text-dark" style="font-size: 0.72rem; letter-spacing: 0.1em; line-height: 1.1;">CLASSIC STONES</span>
+                    <span style="font-size: 8px; color: #64748b; letter-spacing: 0.08em;">INTERNATIONAL</span>
                 </div>
-                <!-- Classic Stones International -->
-                <div class="col">
-                    <div class="client-logo-card">
-                        <div class="text-center">
-                            <i class="bi bi-gem text-dark fs-6 d-block lh-1 mb-1"></i>
-                            <span class="d-block fw-bold text-dark" style="font-size: 0.72rem; letter-spacing: 0.1em; line-height: 1.1;">CLASSIC STONES</span>
-                            <span style="font-size: 8px; color: #64748b; letter-spacing: 0.08em;">INTERNATIONAL</span>
-                        </div>
-                    </div>
+            </div>
+            <div class="client-logo-card">
+                <div class="text-center">
+                    <span style="font-family: 'Caveat', cursive; font-size: 1.6rem; color: #1e293b; line-height: 1;">cff</span>
+                    <span style="font-size: 8px; color: #94a3b8; display: block; letter-spacing: 0.1em;">CONTEMPO FAMILY CRAFT</span>
                 </div>
-                <!-- CFF Craft -->
-                <div class="col">
-                    <div class="client-logo-card">
-                        <div class="text-center">
-                            <span style="font-family: 'Caveat', cursive; font-size: 1.6rem; color: #1e293b; line-height: 1;">cff</span>
-                            <span style="font-size: 8px; color: #94a3b8; display: block; letter-spacing: 0.1em;">CONTEMPO FAMILY CRAFT</span>
-                        </div>
-                    </div>
+            </div>
+            <div class="client-logo-card">
+                <div class="text-center">
+                    <i class="bi bi-shield-fill-check text-dark fs-6 d-block lh-1 mb-1"></i>
+                    <span class="d-block fw-bold text-dark" style="font-size: 0.7rem; letter-spacing: 0.1em; line-height: 1.1;">ASHTASIDDHI</span>
+                    <span style="font-size: 8px; color: #64748b; letter-spacing: 0.15em;">JEWELS</span>
                 </div>
-                <!-- Ashtasiddhi Jewels -->
-                <div class="col">
-                    <div class="client-logo-card">
-                        <div class="text-center">
-                            <i class="bi bi-shield-fill-check text-dark fs-6 d-block lh-1 mb-1"></i>
-                            <span class="d-block fw-bold text-dark" style="font-size: 0.7rem; letter-spacing: 0.1em; line-height: 1.1;">ASHTASIDDHI</span>
-                            <span style="font-size: 8px; color: #64748b; letter-spacing: 0.15em;">JEWELS</span>
-                        </div>
-                    </div>
+            </div>
+            <div class="client-logo-card">
+                <div class="text-center">
+                    <span class="d-block text-dark fw-bold" style="font-style: italic; font-size: 0.85rem; letter-spacing: 0.02em;">Featherlite</span>
+                    <span style="font-size: 8px; color: #64748b; display: block;">by PGL Furnitures</span>
                 </div>
-                <!-- Featherlite -->
-                <div class="col">
-                    <div class="client-logo-card">
-                        <div class="text-center">
-                            <span class="d-block text-dark fw-bold" style="font-style: italic; font-size: 0.85rem; letter-spacing: 0.02em;">Featherlite</span>
-                            <span style="font-size: 8px; color: #64748b; display: block;">by PGL Furnitures</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Gupta Distributors -->
-                <div class="col">
-                    <div class="client-logo-card">
-                        <div class="d-flex align-items-center gap-1">
-                            <i class="bi bi-bullseye text-dark fs-5"></i>
-                            <div class="text-start lh-1">
-                                <span class="d-block fw-black text-dark" style="font-size: 0.75rem; font-weight: 900; letter-spacing: 0.08em;">GUPTA</span>
-                                <span style="font-size: 8px; color: #64748b; letter-spacing: 0.08em;">DISTRIBUTORS</span>
-                            </div>
-                        </div>
+            </div>
+            <div class="client-logo-card">
+                <div class="d-flex align-items-center gap-1">
+                    <i class="bi bi-bullseye text-dark fs-5"></i>
+                    <div class="text-start lh-1">
+                        <span class="d-block fw-black text-dark" style="font-size: 0.75rem; font-weight: 900; letter-spacing: 0.08em;">GUPTA</span>
+                        <span style="font-size: 8px; color: #64748b; letter-spacing: 0.08em;">DISTRIBUTORS</span>
                     </div>
                 </div>
             </div>
@@ -242,146 +272,125 @@ $this->params['fluid'] = true;
             </p>
         </div>
 
-        <!-- 4 Featured Project Cards with Prev/Next Controls -->
-        <div class="position-relative">
-            <!-- Left Slider Arrow -->
-            <button type="button" class="btn-nav-circle-dark position-absolute top-50 start-0 translate-middle-y z-3 d-none d-xl-flex" style="left: -25px !important;" aria-label="Previous Featured Project">
-                <i class="bi bi-chevron-left"></i>
-            </button>
-
-            <!-- 4 Featured Project Cards Grid -->
-            <div class="row g-4 justify-content-center">
-                <!-- Card 01: Food Campaign - ITC Welcom Bhubaneswar -->
-                <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="featured-project-card">
-                        <img src="<?= Yii::getAlias('@web/images/project-food-campaign.jpg') ?>" alt="Food Campaign - ITC Welcom Bhubaneswar" class="featured-project-card-bg">
-                        <div class="featured-project-overlay"></div>
-                        
-                        <!-- Top Index -->
-                        <div class="featured-project-top">
-                            <span class="featured-project-num">01</span>
-                        </div>
-
-                        <!-- Bottom Content -->
-                        <div class="featured-project-body">
-                            <span class="project-tag-pill tag-digital-marketing">Digital Marketing</span>
-                            <h3 class="featured-project-title">
-                                Food Campaign – ITC Welcom Bhubaneswar
-                            </h3>
-                            <p class="featured-project-desc">
-                                Social media campaign, influencer collaboration and event coverage.
-                            </p>
-                            <div class="featured-project-meta">
-                                <span>ADS</span>
-                                <span class="separator">•</span>
-                                <span>FOOD CAMPAIGN</span>
-                                <span class="separator">•</span>
-                                <span><?= date('Y') ?></span>
-                            </div>
-                        </div>
+        <!-- 4 Featured Project Cards Grid -->
+        <div class="row g-4 justify-content-center">
+            <!-- Card 01: Food Campaign - ITC Welcom Bhubaneswar -->
+            <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="featured-project-card">
+                    <img src="<?= Yii::getAlias('@web/images/project-food-campaign.jpg') ?>" alt="Food Campaign - ITC Welcom Bhubaneswar" class="featured-project-card-bg">
+                    <div class="featured-project-overlay"></div>
+                    
+                    <!-- Top Index -->
+                    <div class="featured-project-top">
+                        <span class="featured-project-num">01</span>
                     </div>
-                </div>
 
-                <!-- Card 02: Ad Shoot for Epari Sadashiv Jewellers -->
-                <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="featured-project-card">
-                        <img src="<?= Yii::getAlias('@web/images/project-jewellery.jpg') ?>" alt="Ad Shoot for Epari Sadashiv Jewellers" class="featured-project-card-bg">
-                        <div class="featured-project-overlay"></div>
-
-                        <!-- Top Index -->
-                        <div class="featured-project-top">
-                            <span class="featured-project-num">02</span>
-                        </div>
-
-                        <!-- Bottom Content -->
-                        <div class="featured-project-body">
-                            <span class="project-tag-pill tag-video-production">Video Production</span>
-                            <h3 class="featured-project-title">
-                                Ad Shoot for Epari Sadashiv Jewellers
-                            </h3>
-                            <p class="featured-project-desc">
-                                Product video shoot, editing and promotional campaign.
-                            </p>
-                            <div class="featured-project-meta">
-                                <span>JEWELLERY ADS SHOOT</span>
-                                <span class="separator">•</span>
-                                <span><?= date('Y') ?></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 03: Furniture Ad - Gupta Distributor -->
-                <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="featured-project-card">
-                        <img src="<?= Yii::getAlias('@web/images/project-furniture-ad.jpg') ?>" alt="Furniture Ad - Gupta Distributor" class="featured-project-card-bg">
-                        <div class="featured-project-overlay"></div>
-
-                        <!-- Top Index -->
-                        <div class="featured-project-top">
-                            <span class="featured-project-num">03</span>
-                        </div>
-
-                        <!-- Bottom Content -->
-                        <div class="featured-project-body">
-                            <span class="project-tag-pill tag-campaigns">Campaigns</span>
-                            <h3 class="featured-project-title">
-                                Furniture Ad – Gupta Distributor
-                            </h3>
-                            <p class="featured-project-desc">
-                                Ad shoot and digital campaign for brand promotion.
-                            </p>
-                            <div class="featured-project-meta">
-                                <span>ADS</span>
-                                <span class="separator">•</span>
-                                <span><?= date('Y') ?></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 04: Business Website - Classic Stones -->
-                <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="featured-project-card">
-                        <img src="<?= Yii::getAlias('@web/images/project-website-laptop.jpg') ?>" alt="Business Website - Classic Stones" class="featured-project-card-bg">
-                        <div class="featured-project-overlay"></div>
-
-                        <!-- Top Index -->
-                        <div class="featured-project-top">
-                            <span class="featured-project-num">04</span>
-                        </div>
-
-                        <!-- Bottom Content -->
-                        <div class="featured-project-body">
-                            <span class="project-tag-pill tag-web-dev">Web Development</span>
-                            <h3 class="featured-project-title">
-                                Business Website – Classic Stones
-                            </h3>
-                            <p class="featured-project-desc">
-                                Modern and responsive website development.
-                            </p>
-                            <div class="featured-project-meta">
-                                <span>WEBSITE</span>
-                                <span class="separator">•</span>
-                                <span><?= date('Y') ?></span>
-                            </div>
+                    <!-- Bottom Content -->
+                    <div class="featured-project-body">
+                        <span class="project-tag-pill tag-digital-marketing">Digital Marketing</span>
+                        <h3 class="featured-project-title">
+                            Food Campaign – ITC Welcom Bhubaneswar
+                        </h3>
+                        <p class="featured-project-desc">
+                            Social media campaign, influencer collaboration and event coverage.
+                        </p>
+                        <div class="featured-project-meta">
+                            <span>ADS</span>
+                            <span class="separator">•</span>
+                            <span>FOOD CAMPAIGN</span>
+                            <span class="separator">•</span>
+                            <span><?= date('Y') ?></span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Slider Arrow -->
-            <button type="button" class="btn-nav-circle-dark position-absolute top-50 end-0 translate-middle-y z-3 d-none d-xl-flex" style="right: -25px !important;" aria-label="Next Featured Project">
-                <i class="bi bi-chevron-right"></i>
-            </button>
-        </div>
+            <!-- Card 02: Ad Shoot for Epari Sadashiv Jewellers -->
+            <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="featured-project-card">
+                    <img src="<?= Yii::getAlias('@web/images/project-jewellery.jpg') ?>" alt="Ad Shoot for Epari Sadashiv Jewellers" class="featured-project-card-bg">
+                    <div class="featured-project-overlay"></div>
 
-        <!-- Slider Pagination Dots Indicator -->
-        <div class="project-slider-dots">
-            <span class="project-dot active"></span>
-            <span class="project-dot"></span>
-            <span class="project-dot"></span>
-            <span class="project-dot"></span>
+                    <!-- Top Index -->
+                    <div class="featured-project-top">
+                        <span class="featured-project-num">02</span>
+                    </div>
+
+                    <!-- Bottom Content -->
+                    <div class="featured-project-body">
+                        <span class="project-tag-pill tag-video-production">Video Production</span>
+                        <h3 class="featured-project-title">
+                            Ad Shoot for Epari Sadashiv Jewellers
+                        </h3>
+                        <p class="featured-project-desc">
+                            Product video shoot, editing and promotional campaign.
+                        </p>
+                        <div class="featured-project-meta">
+                            <span>JEWELLERY ADS SHOOT</span>
+                            <span class="separator">•</span>
+                            <span><?= date('Y') ?></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 03: Furniture Ad - Gupta Distributor -->
+            <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="featured-project-card">
+                    <img src="<?= Yii::getAlias('@web/images/project-furniture-ad.jpg') ?>" alt="Furniture Ad - Gupta Distributor" class="featured-project-card-bg">
+                    <div class="featured-project-overlay"></div>
+
+                    <!-- Top Index -->
+                    <div class="featured-project-top">
+                        <span class="featured-project-num">03</span>
+                    </div>
+
+                    <!-- Bottom Content -->
+                    <div class="featured-project-body">
+                        <span class="project-tag-pill tag-campaigns">Campaigns</span>
+                        <h3 class="featured-project-title">
+                            Furniture Ad – Gupta Distributor
+                        </h3>
+                        <p class="featured-project-desc">
+                            Ad shoot and digital campaign for brand promotion.
+                        </p>
+                        <div class="featured-project-meta">
+                            <span>ADS</span>
+                            <span class="separator">•</span>
+                            <span><?= date('Y') ?></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 04: Business Website - Classic Stones -->
+            <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="featured-project-card">
+                    <img src="<?= Yii::getAlias('@web/images/project-website-laptop.jpg') ?>" alt="Business Website - Classic Stones" class="featured-project-card-bg">
+                    <div class="featured-project-overlay"></div>
+
+                    <!-- Top Index -->
+                    <div class="featured-project-top">
+                        <span class="featured-project-num">04</span>
+                    </div>
+
+                    <!-- Bottom Content -->
+                    <div class="featured-project-body">
+                        <span class="project-tag-pill tag-web-dev">Web Development</span>
+                        <h3 class="featured-project-title">
+                            Business Website – Classic Stones
+                        </h3>
+                        <p class="featured-project-desc">
+                            Modern and responsive website development.
+                        </p>
+                        <div class="featured-project-meta">
+                            <span>WEBSITE</span>
+                            <span class="separator">•</span>
+                            <span><?= date('Y') ?></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
