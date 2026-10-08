@@ -38,13 +38,16 @@ $this->params['fluid'] = true; // Full-width section styling
                 </div>
             </div>
 
-            <!-- Right Hero Badge / Accents (Laptop is now the background cover) -->
-            <div class="col-lg-6 position-relative d-none d-lg-block" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
-                <div class="hero-badge-corner">
+            <!-- Right Hero Image: Showcase Laptop with Glowing Card & Handwritten Badge -->
+            <div class="col-lg-6 position-relative text-center text-lg-end" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
+                <div class="hero-badge-corner d-none d-lg-block">
                     <span class="handwritten-badge">
                         Your<br>Growth<br>Partner
                     </span>
                     <span class="curved-arrow"></span>
+                </div>
+                <div class="hero-image-wrapper shadow-lg">
+                    <img src="<?= Yii::getAlias('@web/images/hero-laptop.jpg') ?>" alt="Digital Marketing Growth Dashboard" class="hero-image img-fluid">
                 </div>
             </div>
         </div>
