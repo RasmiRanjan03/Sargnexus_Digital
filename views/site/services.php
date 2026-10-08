@@ -77,8 +77,8 @@ $this->params['fluid'] = true;
                 <div class="service-overlay-card">
                     <img src="<?= Yii::getAlias('@web/images/service-influencer.jpg') ?>" alt="Influencer Marketing">
                     <div class="service-overlay-content">
-                        <h4 class="service-card-title">Influencer Marketing</h4>
-                        <p class="service-card-desc">Connect with credible creators to authentically amplify your brand.</p>
+                        <h4 class="service-card-title">Digital Marketing Strategy</h4>
+                        <p class="service-card-desc"> We create digital strategies that help businesses reach more customers.</p>
                     </div>
                 </div>
             </div>
@@ -88,8 +88,8 @@ $this->params['fluid'] = true;
                 <div class="service-overlay-card">
                     <img src="<?= Yii::getAlias('@web/images/service-advertising.jpg') ?>" alt="Performance Marketing">
                     <div class="service-overlay-content">
-                        <h4 class="service-card-title">Performance Marketing</h4>
-                        <p class="service-card-desc">Data-driven paid ads designed for conversions, ROI, and scale.</p>
+                        <h4 class="service-card-title">Content Creation</h4>
+                        <p class="service-card-desc"> We create engaging content to promote your brand and attract customers.</p>
                     </div>
                 </div>
             </div>
@@ -99,8 +99,8 @@ $this->params['fluid'] = true;
                 <div class="service-overlay-card">
                     <img src="<?= Yii::getAlias('@web/images/service-campaigns-btl.jpg') ?>" alt="Campaigns & BTL Activities">
                     <div class="service-overlay-content">
-                        <h4 class="service-card-title">Campaigns &amp; BTL Activities</h4>
-                        <p class="service-card-desc">High-impact brand activations, experiential events, and creative campaigns.</p>
+                        <h4 class="service-card-title">Meta Ads</h4>
+                        <p class="service-card-desc">We run targeted Facebook and Instagram ads to reach the right audience.</p>
                     </div>
                 </div>
             </div>
@@ -110,8 +110,8 @@ $this->params['fluid'] = true;
                 <div class="service-overlay-card">
                     <img src="<?= Yii::getAlias('@web/images/service-photoshoot.jpg') ?>" alt="Photoshoot & Video Shoot">
                     <div class="service-overlay-content">
-                        <h4 class="service-card-title">Photoshoot &amp; Video Shoot</h4>
-                        <p class="service-card-desc">High-end product, commercial, and brand video production.</p>
+                        <h4 class="service-card-title">Google Ads</h4>
+                        <p class="service-card-desc"> We run Google Ads to increase your online visibility and get more customers.</p>
                     </div>
                 </div>
             </div>
@@ -121,8 +121,8 @@ $this->params['fluid'] = true;
                 <div class="service-overlay-card">
                     <img src="<?= Yii::getAlias('@web/images/service-branding.jpg') ?>" alt="Branding">
                     <div class="service-overlay-content">
-                        <h4 class="service-card-title">Branding</h4>
-                        <p class="service-card-desc">Build an iconic identity, guidelines, and visual language that lasts.</p>
+                        <h4 class="service-card-title">Social Media Handling</h4>
+                        <p class="service-card-desc">We manage your social media with regular posts and audience engagement.</p>
                     </div>
                 </div>
             </div>
@@ -132,8 +132,8 @@ $this->params['fluid'] = true;
                 <div class="service-overlay-card">
                     <img src="<?= Yii::getAlias('@web/images/service-pr.jpg') ?>" alt="PR Marketing">
                     <div class="service-overlay-content">
-                        <h4 class="service-card-title">PR Marketing</h4>
-                        <p class="service-card-desc">Earned media visibility, press releases, and brand reputation building.</p>
+                        <h4 class="service-card-title">Meta Business Ad</h4>
+                        <p class="service-card-desc"> We run targeted Meta ads to help businesses reach the right audience and generate more leads.</p>
                     </div>
                 </div>
             </div>

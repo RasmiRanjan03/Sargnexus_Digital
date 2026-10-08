@@ -164,10 +164,10 @@ $this->params['fluid'] = true; // Full-width section styling
                     </div>
                     <div class="service-card-body">
                         <div class="d-flex justify-content-between align-items-center mb-1">
-                            <h5 class="fw-bold mb-0 fs-6">Influencer Marketing</h5>
+                            <h5 class="fw-bold mb-0 fs-6">Digital Marketing Strategy</h5>
                             <span class="service-plus-btn"><i class="bi bi-plus-lg"></i></span>
                         </div>
-                        <p class="text-secondary small mb-0">Connect with credible creators to authentically amplify your brand.</p>
+                        <p class="text-secondary small mb-0">We create digital strategies that help businesses reach more customers..</p>
                     </div>
                 </div>
             </div>
@@ -180,10 +180,10 @@ $this->params['fluid'] = true; // Full-width section styling
                     </div>
                     <div class="service-card-body">
                         <div class="d-flex justify-content-between align-items-center mb-1">
-                            <h5 class="fw-bold mb-0 fs-6">Performance Marketing</h5>
+                            <h5 class="fw-bold mb-0 fs-6">Content Creation </h5>
                             <span class="service-plus-btn"><i class="bi bi-plus-lg"></i></span>
                         </div>
-                        <p class="text-secondary small mb-0">Data-driven paid ads designed for conversions, ROI, and scale.</p>
+                        <p class="text-secondary small mb-0">We create engaging content to promote your brand and attract customers.</p>
                     </div>
                 </div>
             </div>
@@ -196,10 +196,10 @@ $this->params['fluid'] = true; // Full-width section styling
                     </div>
                     <div class="service-card-body">
                         <div class="d-flex justify-content-between align-items-center mb-1">
-                            <h5 class="fw-bold mb-0 fs-6">Campaigns &amp; BTL Activities</h5>
+                            <h5 class="fw-bold mb-0 fs-6">Meta Ads</h5>
                             <span class="service-plus-btn"><i class="bi bi-plus-lg"></i></span>
                         </div>
-                        <p class="text-secondary small mb-0">High-impact brand activations, experiential events, and creative campaigns.</p>
+                        <p class="text-secondary small mb-0"> We run targeted Facebook and Instagram ads to reach the right audience.</p>
                     </div>
                 </div>
             </div>
@@ -212,10 +212,10 @@ $this->params['fluid'] = true; // Full-width section styling
                     </div>
                     <div class="service-card-body">
                         <div class="d-flex justify-content-between align-items-center mb-1">
-                            <h5 class="fw-bold mb-0 fs-6">Photoshoot &amp; Video Shoot</h5>
+                            <h5 class="fw-bold mb-0 fs-6">Google Ads</h5>
                             <span class="service-plus-btn"><i class="bi bi-plus-lg"></i></span>
                         </div>
-                        <p class="text-secondary small mb-0">High-end product, commercial, and brand video production.</p>
+                        <p class="text-secondary small mb-0"> We run Google Ads to increase your online visibility and get more customers.</p>
                     </div>
                 </div>
             </div>
@@ -228,29 +228,30 @@ $this->params['fluid'] = true; // Full-width section styling
                     </div>
                     <div class="service-card-body">
                         <div class="d-flex justify-content-between align-items-center mb-1">
-                            <h5 class="fw-bold mb-0 fs-6">Branding</h5>
+                            <h5 class="fw-bold mb-0 fs-6">Social Media Handling</h5>
                             <span class="service-plus-btn"><i class="bi bi-plus-lg"></i></span>
                         </div>
-                        <p class="text-secondary small mb-0">Build an iconic identity, guidelines, and visual language that lasts.</p>
+                        <p class="text-secondary small mb-0">We manage your social media with regular posts and audience engagement.</p>
                     </div>
                 </div>
             </div>
 
             <!-- 7. PR Marketing -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
                 <div class="service-card h-100">
                     <div class="service-card-img-wrapper">
-                        <img src="<?= Yii::getAlias('@web/images/service-pr.jpg') ?>" alt="PR Marketing">
+                        <img src="<?= Yii::getAlias('@web/images/service-branding.jpg') ?>" alt="Branding">
                     </div>
                     <div class="service-card-body">
                         <div class="d-flex justify-content-between align-items-center mb-1">
-                            <h5 class="fw-bold mb-0 fs-6">PR Marketing</h5>
+                            <h5 class="fw-bold mb-0 fs-6">Meta Business Ads</h5>
                             <span class="service-plus-btn"><i class="bi bi-plus-lg"></i></span>
                         </div>
-                        <p class="text-secondary small mb-0">Earned media visibility, press releases, and brand reputation building.</p>
+                        <p class="text-secondary small mb-0"> We run targeted Meta ads to help businesses reach the right audience and generate more leads.</p>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
