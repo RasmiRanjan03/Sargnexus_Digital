@@ -12,7 +12,7 @@ $this->params['meta_description'] = 'Request a quote for digital marketing, SEO,
 $this->params['fluid'] = true;
 ?>
 
-<section class="quote-page-section py-5 position-relative overflow-hidden">
+<section class="quote-page-section pb-5 position-relative overflow-hidden">
     <!-- Atmospheric glow bubbles -->
     <div class="quote-glow-bg-1"></div>
     <div class="quote-glow-bg-2"></div>

@@ -27,12 +27,25 @@ body {
     padding: 0;
 }
 
-#main, main, .hero-section, .services-hero-section, .projects-hero-section, .about-section, .why-us-section, .testimonials-section, .cta-banner-section {
+#main,
+main,
+.hero-section,
+.services-hero-section,
+.projects-hero-section,
+.about-section,
+.why-us-section,
+.testimonials-section,
+.cta-banner-section {
     overflow-x: clip;
     max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     letter-spacing: -0.02em;
 }
@@ -59,21 +72,29 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Custom Mobile Menu Button */
-.custom-mobile-menu-btn {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 8px;
-    padding: 7px 14px;
-    border-radius: 9999px;
-    background: rgba(108, 92, 231, 0.22) !important;
-    border: 1.5px solid rgba(128, 84, 255, 0.55) !important;
-    color: #ffffff !important;
-    cursor: pointer;
-    line-height: 1;
-    z-index: 1055;
-    transition: all 0.25s ease;
+/* Custom Mobile Menu Button - Mobile only, strictly hidden on PC/Desktop (>=992px) */
+@media (min-width: 992px) {
+    .custom-mobile-menu-btn {
+        display: none !important;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .custom-mobile-menu-btn {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 8px;
+        padding: 7px 14px;
+        border-radius: 9999px;
+        background: rgba(108, 92, 231, 0.22) !important;
+        border: 1.5px solid rgba(128, 84, 255, 0.55) !important;
+        color: #ffffff !important;
+        cursor: pointer;
+        line-height: 1;
+        z-index: 1055;
+        transition: all 0.25s ease;
+    }
 }
 
 .custom-mobile-menu-btn i {
@@ -123,6 +144,21 @@ h1, h2, h3, h4, h5, h6 {
     .nav-link-custom.active {
         background: rgba(255, 255, 255, 0.06);
     }
+}
+
+.brand-logo-img {
+    height: 38px;
+    width: auto;
+    max-width: 48px;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 0 10px rgba(108, 92, 231, 0.75)) drop-shadow(0 0 22px rgba(142, 68, 245, 0.45));
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.navbar-brand:hover .brand-logo-img {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 14px rgba(108, 92, 231, 0.95)) drop-shadow(0 0 28px rgba(168, 85, 247, 0.65));
 }
 
 .sn-logo-badge {
@@ -261,7 +297,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
-.custom-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+.custom-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
     color: #64748b;
     content: ">";
 }
@@ -765,8 +801,23 @@ h1, h2, h3, h4, h5, h6 {
 /* GET A QUOTE PAGE STYLES */
 .quote-page-section {
     background-color: #ffffff;
-    padding-top: 130px;
+    padding-top: 100px;
+    padding-bottom: 80px;
     min-height: calc(100vh - 200px);
+}
+
+@media (max-width: 991.98px) {
+    .quote-page-section {
+        padding-top: 135px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .quote-page-section {
+        padding-top: 115px;
+        padding-bottom: 40px;
+    }
 }
 
 .quote-glow-bg-1 {
@@ -1146,22 +1197,29 @@ h1, h2, h3, h4, h5, h6 {
     .hero-title {
         font-size: 2.5rem;
     }
-    .hero-section, .services-hero-section {
+
+    .hero-section,
+    .services-hero-section {
         padding-top: 100px;
         padding-bottom: 50px;
     }
+
     .pricing-card.featured-card {
         transform: none;
     }
+
     .process-line-connector {
         display: none;
     }
+
     .pricing-card {
         padding: 28px 24px;
     }
+
     .section-title {
         font-size: 2rem;
     }
+
     .about-composite-wrapper {
         margin-top: 2rem;
     }
@@ -1172,31 +1230,40 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 2.1rem;
         line-height: 1.2;
     }
+
     .hero-subtitle {
         font-size: 0.98rem;
     }
+
     .section-title {
         font-size: 1.75rem;
     }
+
     .pricing-card {
         padding: 24px 20px;
     }
+
     .pricing-price {
         font-size: 1.95rem;
     }
+
     .pricing-features-list li {
         font-size: 13.5px;
         padding: 6px 0;
     }
+
     .stat-item h3 {
         font-size: 1.5rem;
     }
+
     .stat-item small {
         font-size: 11px;
     }
+
     .impact-title {
         font-size: 1.25rem;
     }
+
     .custom-plan-container {
         padding: 24px 18px !important;
     }
@@ -1207,30 +1274,42 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1.85rem;
         word-break: break-word;
     }
-    .hero-section, .services-hero-section, .projects-hero-section {
+
+    .hero-section,
+    .services-hero-section,
+    .projects-hero-section {
         padding-top: 85px;
         padding-bottom: 40px;
     }
+
     .hero-subtitle {
         font-size: 0.95rem;
     }
-    .btn-purple-gradient, .btn-outline-purple, .btn-dark-navy {
+
+    .btn-purple-gradient,
+    .btn-outline-purple,
+    .btn-dark-navy {
         font-size: 0.9rem;
     }
+
     .pricing-price {
         font-size: 1.75rem;
     }
+
     .pricing-features-list li {
         font-size: 13px;
     }
+
     .stat-item h3 {
         font-size: 1.35rem;
     }
+
     .stat-item small {
         font-size: 10.5px;
         line-height: 1.2;
         display: block;
     }
+
     .floating-info-card {
         padding: 8px 12px;
         font-size: 11.5px;
@@ -1238,18 +1317,23 @@ h1, h2, h3, h4, h5, h6 {
         left: 10px !important;
         right: auto !important;
     }
+
     .card-bottom-left {
         left: 10px !important;
         bottom: -10px !important;
     }
+
     .card-top-left {
         left: 10px !important;
         top: 10px !important;
     }
+
     .service-card-img-wrapper {
         height: 180px;
     }
-    .container, .custom-nav-container {
+
+    .container,
+    .custom-nav-container {
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -1298,27 +1382,36 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Floating animation for cards & badges */
 @keyframes floatSlow {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-8px);
     }
 }
 
 @keyframes floatReverse {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(8px);
     }
 }
 
 @keyframes pulseGlow {
-    0%, 100% {
+
+    0%,
+    100% {
         box-shadow: 0 0 20px rgba(108, 92, 231, 0.35);
     }
+
     50% {
         box-shadow: 0 0 35px rgba(129, 140, 248, 0.65);
     }
@@ -1328,9 +1421,11 @@ h1, h2, h3, h4, h5, h6 {
     0% {
         box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
     }
+
     70% {
         box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
     }
+
     100% {
         box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
     }
@@ -1382,12 +1477,10 @@ h1, h2, h3, h4, h5, h6 {
     left: -60%;
     width: 40%;
     height: 200%;
-    background: linear-gradient(
-        60deg,
-        rgba(255, 255, 255, 0) 20%,
-        rgba(255, 255, 255, 0.3) 50%,
-        rgba(255, 255, 255, 0) 80%
-    );
+    background: linear-gradient(60deg,
+            rgba(255, 255, 255, 0) 20%,
+            rgba(255, 255, 255, 0.3) 50%,
+            rgba(255, 255, 255, 0) 80%);
     transform: rotate(25deg);
     transition: all 0.75s ease;
 }
@@ -1397,7 +1490,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Interactive Card Enhancements */
-.service-card, .service-overlay-card, .pricing-card, .testimonial-card, .why-feature-card {
+.service-card,
+.service-overlay-card,
+.pricing-card,
+.testimonial-card,
+.why-feature-card {
     will-change: transform, box-shadow;
 }
 
@@ -1645,6 +1742,7 @@ h1, h2, h3, h4, h5, h6 {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -1654,6 +1752,7 @@ h1, h2, h3, h4, h5, h6 {
     0% {
         transform: translateX(-50%);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -1725,25 +1824,21 @@ h1, h2, h3, h4, h5, h6 {
 .featured-project-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        180deg,
-        rgba(10, 12, 20, 0.5) 0%,
-        rgba(10, 12, 20, 0.1) 40%,
-        rgba(10, 12, 20, 0.95) 85%,
-        #080a10 100%
-    );
+    background: linear-gradient(180deg,
+            rgba(10, 12, 20, 0.5) 0%,
+            rgba(10, 12, 20, 0.1) 40%,
+            rgba(10, 12, 20, 0.95) 85%,
+            #080a10 100%);
     z-index: 2;
     transition: opacity 0.3s ease;
 }
 
 .featured-project-card:hover .featured-project-overlay {
-    background: linear-gradient(
-        180deg,
-        rgba(10, 12, 20, 0.4) 0%,
-        rgba(10, 12, 20, 0.05) 35%,
-        rgba(10, 12, 20, 0.98) 80%,
-        #06080d 100%
-    );
+    background: linear-gradient(180deg,
+            rgba(10, 12, 20, 0.4) 0%,
+            rgba(10, 12, 20, 0.05) 35%,
+            rgba(10, 12, 20, 0.98) 80%,
+            #06080d 100%);
 }
 
 .featured-project-top {
@@ -1925,6 +2020,3 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     letter-spacing: -0.01em;
 }
-
-
-

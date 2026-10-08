@@ -13,7 +13,7 @@ use yii\helpers\Url;
             <!-- Brand Column -->
             <div class="col-lg-3 col-md-6">
                 <a class="navbar-brand d-inline-flex align-items-center gap-2 mb-3" href="<?= Url::to(['/site/index']) ?>">
-                    <span class="sn-logo-badge">SN</span>
+                    <img src="<?= Url::to('@web/images/logo.png') ?>" alt="SARGNEXUS Logo" class="brand-logo-img">
                     <div class="brand-text d-flex flex-column lh-1">
                         <span class="brand-title text-white">SARGNEXUS</span>
                         <span class="brand-sub">DIGITAL</span>
