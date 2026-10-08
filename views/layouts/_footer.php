@@ -34,12 +34,12 @@ use yii\helpers\Url;
                 <h6 class="footer-heading mb-3 text-white fw-bold">Services</h6>
                 <ul class="list-unstyled footer-links small">
                     <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Social Media Marketing</a></li>
-                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Influencer Marketing</a></li>
-                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Performance Marketing</a></li>
-                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Campaigns &amp; BTL Activities</a></li>
-                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Photoshoot &amp; Video Shoot</a></li>
-                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Branding</a></li>
-                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">PR Marketing</a></li>
+                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Digital Marketing Strategy</a></li>
+                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Content Creation</a></li>
+                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Meta Ads</a></li>
+                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Google Ads</a></li>
+                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Social Media Marketing</a></li>
+                    <li class="mb-2"><a href="<?= Url::to(['/site/services']) ?>">Meta Business Ads</a></li>
                 </ul>
             </div>
 
