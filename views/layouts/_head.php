@@ -69,7 +69,7 @@ $this->registerLinkTag(
 $this->registerLinkTag(
     [
         'rel' => 'icon',
-        'type' => 'image/x-icon',
-        'href' => Yii::getAlias('@web/favicon.ico'),
+        'type' => 'image/png',
+        'href' => Yii::getAlias('@web/logo.png'),
     ],
 );
