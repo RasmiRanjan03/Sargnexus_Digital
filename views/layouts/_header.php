@@ -15,10 +15,6 @@ $currentAction = Yii::$app->controller->action->id;
             <!-- Brand Logo -->
             <a class="navbar-brand d-flex align-items-center gap-2" href="<?= Url::to(['/site/index']) ?>">
                 <img src="<?= Url::to('@web/images/logo.png') ?>" alt="SARGNEXUS Logo" class="brand-logo-img">
-                <div class="brand-text d-flex flex-column lh-1">
-                    <span class="brand-title">SARGNEXUS</span>
-                    <span class="brand-sub">DIGITAL</span>
-                </div>
             </a>
 
             <!-- Mobile Toggle / Menu Button -->

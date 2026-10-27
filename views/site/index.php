@@ -319,6 +319,32 @@ $this->params['fluid'] = true; // Full-width section styling
     </div>
 </section>
 
+<?php
+$pricingFeatures = [
+    ['Creative posts', ['6', '8', '10', '12']],
+    ['Short-form reels', ['2', '5', '8', '12']],
+    ['Social stories', ['6', '8', '12', '16']],
+    ['Facebook & Instagram', ['Yes', 'Yes', 'Yes', 'Yes']],
+    ['Content schedule', ['Yes', 'Yes', 'Yes', 'Yes']],
+    ['Captions & hashtags', ['Yes', 'Yes', 'Yes', 'Yes']],
+    ['On-site shoots', ['—', '—', '1', '2']],
+    ['Google Business Profile', ['—', 'Basic', 'Enhanced', 'Advanced']],
+    ['Local SEO', ['—', '—', 'Basic', 'Advanced']],
+    ['Meta Ads management', ['—', 'Basic', 'Full', 'Full']],
+    ['Google Ads management', ['—', '—', '—', 'Yes']],
+    ['YouTube management', ['—', '—', '—', 'Yes']],
+    ['Retargeting setup', ['—', '—', '—', 'Yes']],
+    ['Performance report', ['Basic', 'Standard', 'Detailed', 'Detailed']],
+    ['Strategy meetings', ['—', '—', '1', '2']],
+];
+$pricingPlans = [
+    ['name' => 'IGNITE', 'price' => '5,999', 'description' => 'For businesses getting started.'],
+    ['name' => 'SPARK', 'price' => '8,999', 'description' => 'For businesses ready to grow.'],
+    ['name' => 'MOMENTUM', 'price' => '14,999', 'description' => 'For businesses building momentum.','featured' => true],
+    ['name' => 'VELOCITY', 'price' => '24,999', 'description' => 'For businesses ready to scale.'],
+];
+?>
+
 <!-- 5. PRICING SECTION -->
 <section id="pricing" class="pricing-section py-5">
     <div class="container custom-nav-container">
@@ -336,120 +362,45 @@ $this->params['fluid'] = true; // Full-width section styling
             </div>
         </div>
 
-        <!-- 3 Tier Pricing Cards -->
+        <!-- Monthly pricing plans -->
         <div class="row g-4 align-items-stretch">
-            <!-- STARTER -->
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="pricing-card h-100">
-                    <div>
-                        <div class="pricing-plan-badge text-uppercase mb-2">STARTER</div>
-                        <div class="d-flex align-items-baseline gap-1 mb-1">
-                            <span class="pricing-price">&#8377;9,999</span>
-                            <span class="pricing-period">/ month</span>
-                        </div>
-                        <p class="text-secondary small mb-4">For businesses getting started.</p>
+            <?php foreach ($pricingPlans as $planIndex => $plan): ?>
+                <?php $isFeatured = !empty($plan['featured']); ?>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="<?= ($planIndex + 1) * 100 ?>">
+                    <div class="pricing-card <?= $isFeatured ? 'featured-card' : '' ?> h-100">
+                        <?php if ($isFeatured): ?>
+                            <span class="most-popular-pill">Most Popular</span>
+                        <?php endif; ?>
+                        <div>
+                            <div class="pricing-plan-badge text-uppercase mb-2"><?= Html::encode($plan['name']) ?></div>
+                            <div class="d-flex align-items-baseline gap-1 mb-1">
+                                <span class="pricing-price">&#8377;<?= Html::encode($plan['price']) ?></span>
+                                <span class="pricing-period">/ month</span>
+                            </div>
+                            <p class="text-secondary small mb-4"><?= Html::encode($plan['description']) ?></p>
 
-                        <ul class="pricing-features-list">
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> Social Media Content</li>
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> Basic SEO</li>
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> 8 Social Posts</li>
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> Monthly Report</li>
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> Basic Content Strategy</li>
-                            <li class="disabled-feature"><i class="bi bi-lock text-muted fs-6"></i> Google Ads</li>
-                            <li class="disabled-feature"><i class="bi bi-lock text-muted fs-6"></i> Lead Generation</li>
-                            <li class="disabled-feature"><i class="bi bi-lock text-muted fs-6"></i> Advanced SEO</li>
-                            <li class="disabled-feature"><i class="bi bi-lock text-muted fs-6"></i> Reels &amp; Video Content</li>
-                            <li class="disabled-feature"><i class="bi bi-lock text-muted fs-6"></i> Competitor Research</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <div class="premium-locked-box d-flex align-items-center gap-2 mb-3">
-                            <i class="bi bi-lock-fill text-secondary"></i>
-                            <span><strong>Premium features</strong><br>Unlock more tools and customization with higher plans.</span>
+                            <ul class="pricing-features-list">
+                                <?php foreach ($pricingFeatures as [$featureName, $planValues]): ?>
+                                    <?php $featureValue = $planValues[$planIndex]; ?>
+                                    <?php $isIncluded = $featureValue !== '—'; ?>
+                                    <li class="<?= $isIncluded ? '' : 'disabled-feature' ?>">
+                                        <i class="bi <?= $isIncluded ? 'bi-check-lg text-success fs-5' : 'bi-lock text-muted fs-6' ?>"></i>
+                                        <span><?= Html::encode($featureName) ?>: <?= Html::encode($featureValue) ?></span>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
                         </div>
-                        <a href="<?= Url::to(['/site/quote']) ?>" class="btn btn-outline-secondary w-100 rounded-pill py-2 fw-semibold">
-                            Start with Starter &rarr;
+
+                        <a href="<?= Url::to(['/site/quote']) ?>" class="btn <?= $isFeatured ? 'btn-purple-gradient text-white' : 'btn-outline-secondary' ?> w-100 rounded-pill py-2 fw-semibold">
+                            Choose <?= Html::encode(ucfirst(strtolower($plan['name']))) ?> &rarr;
                         </a>
                     </div>
                 </div>
-            </div>
-
-            <!-- GROWTH (MOST POPULAR) -->
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="pricing-card featured-card h-100">
-                    <span class="most-popular-pill">Most Popular</span>
-                    <div>
-                        <div class="pricing-plan-badge text-uppercase text-primary mb-2">GROWTH</div>
-                        <div class="d-flex align-items-baseline gap-1 mb-1">
-                            <span class="pricing-price">&#8377;19,999</span>
-                            <span class="pricing-period">/ month</span>
-                        </div>
-                        <p class="text-secondary small mb-4">For businesses ready to grow.</p>
-
-                        <ul class="pricing-features-list">
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> Everything in Starter</li>
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> Advanced SEO</li>
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> Google / Meta Ads</li>
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> 15 Social Posts</li>
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> Lead Generation</li>
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> Competitor Research</li>
-                            <li class="disabled-feature"><i class="bi bi-lock text-muted fs-6"></i> Conversion Optimization</li>
-                            <li class="disabled-feature"><i class="bi bi-lock text-muted fs-6"></i> Advanced Analytics</li>
-                            <li class="disabled-feature"><i class="bi bi-lock text-muted fs-6"></i> Dedicated Strategy</li>
-                            <li class="disabled-feature"><i class="bi bi-lock text-muted fs-6"></i> Priority Support</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <div class="premium-locked-box d-flex align-items-center gap-2 mb-3">
-                            <i class="bi bi-lock-fill text-secondary"></i>
-                            <span><strong>Want more control and customization?</strong><br>These features are available in Premium.</span>
-                        </div>
-                        <a href="<?= Url::to(['/site/quote']) ?>" class="btn btn-purple-gradient text-white w-100 rounded-pill py-2 fw-semibold">
-                            Choose Growth &rarr;
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PREMIUM -->
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="pricing-card h-100">
-                    <div>
-                        <div class="pricing-plan-badge text-uppercase mb-2">PREMIUM</div>
-                        <div class="d-flex align-items-baseline gap-1 mb-1">
-                            <span class="pricing-price">&#8377;29,999</span>
-                            <span class="pricing-period">/ month</span>
-                        </div>
-                        <p class="text-secondary small mb-4">For a complete marketing solution.</p>
-
-                        <ul class="pricing-features-list">
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> Everything in Growth</li>
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> Advanced SEO</li>
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> Google + Meta Ads</li>
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> Lead Generation</li>
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> Reels &amp; Video Content</li>
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> Conversion Optimization</li>
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> Dedicated Analytics</li>
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> Advanced Strategy</li>
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> Custom Campaigns</li>
-                            <li><i class="bi bi-check-lg text-success fs-5"></i> 24/7 Priority Support</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <div class="premium-locked-box d-flex align-items-center gap-2 mb-3">
-                            <i class="bi bi-shield-check text-success"></i>
-                            <span><strong>Advanced features</strong><br>Unlock complete control and custom solutions.</span>
-                        </div>
-                        <a href="#contact" class="btn btn-dark-navy w-100 rounded-pill py-2 fw-semibold">
-                            Let's Talk &rarr;
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
+        <p class="text-secondary small text-center mt-4 mb-0">
+            All fees are proposed monthly service charges. Advertising spend is billed separately.
+        </p>
     </div>
 </section>
 

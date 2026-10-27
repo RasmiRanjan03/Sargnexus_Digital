@@ -14,18 +14,14 @@ use yii\helpers\Url;
             <div class="col-lg-3 col-md-6">
                 <a class="navbar-brand d-inline-flex align-items-center gap-2 mb-3" href="<?= Url::to(['/site/index']) ?>">
                     <img src="<?= Url::to('@web/images/logo.png') ?>" alt="SARGNEXUS Logo" class="brand-logo-img">
-                    <div class="brand-text d-flex flex-column lh-1">
-                        <span class="brand-title text-white">SARGNEXUS</span>
-                        <span class="brand-sub">DIGITAL</span>
-                    </div>
                 </a>
                 <p class="text-secondary small pe-lg-3 mt-2 lh-base">
                     Digital solutions that help your business get seen, get leads and grow.
                 </p>
                 <div class="footer-social-icons d-flex gap-3 mt-3">
-                    <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn"><i class="bi bi-linkedin"></i></a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn"><i class="bi bi-instagram"></i></a>
-                    <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn"><i class="bi bi-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/sargnexus-digital-1b83a2447" target="_blank" rel="noopener" class="social-icon-btn"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.instagram.com/sargnexus.digital?" target="_blank" rel="noopener" class="social-icon-btn"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.youtube.com/sargnexus" target="_blank" rel="noopener" class="social-icon-btn"><i class="bi bi-youtube"></i></a>
                 </div>
             </div>
 
