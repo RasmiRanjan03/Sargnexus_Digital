@@ -5,7 +5,7 @@
 use yii\helpers\Html;
 use yii\helpers\Url;
 
-$this->title = 'SARGNEXUS Digital - Grow Your Business OFFLINE';
+$this->title = 'SARGNEXUS Digital - Grow Your Business Online';
 $this->params['meta_description'] = 'We help businesses get noticed, reach the right people, and turn online attention into real customers.';
 $this->params['fluid'] = true; // Full-width section styling
 ?>
@@ -23,7 +23,7 @@ $this->params['fluid'] = true; // Full-width section styling
                 </span>
                 <h1 class="hero-title mb-4">
                     Grow Your<br>
-                    Business <span class="text-gradient-purple">Online.</span>
+                    Business <span class="text-gradient-purple">OFFLINE.</span>
                 </h1>
                 <p class="hero-subtitle mb-4 pe-lg-4">
                     We help businesses get noticed, reach the right people, and turn online attention into real customers.
