@@ -23,7 +23,7 @@ $this->params['fluid'] = true; // Full-width section styling
                 </span>
                 <h1 class="hero-title mb-4">
                     Grow Your<br>
-                    Business <span class="text-gradient-purple">OFFLINE.</span>
+                    Business <span class="text-gradient-purple">Online.</span>
                 </h1>
                 <p class="hero-subtitle mb-4 pe-lg-4">
                     We help businesses get noticed, reach the right people, and turn online attention into real customers.
