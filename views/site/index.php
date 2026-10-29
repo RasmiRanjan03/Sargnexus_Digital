@@ -5,7 +5,7 @@
 use yii\helpers\Html;
 use yii\helpers\Url;
 
-$this->title = 'SARGNEXUS Digital - Grow Your Business Online';
+$this->title = 'SARGNEXUS Digital - Grow Your Business OFFLINE';
 $this->params['meta_description'] = 'We help businesses get noticed, reach the right people, and turn online attention into real customers.';
 $this->params['fluid'] = true; // Full-width section styling
 ?>
